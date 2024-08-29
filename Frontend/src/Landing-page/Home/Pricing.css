@@ -1,0 +1,29 @@
+.home-pricing-box {
+  margin: 100px auto;
+}
+.home-pricing-txtBox {
+  padding: 0;
+  width: 480px;
+}
+.home-pricing-txtBox a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2;
+}
+.home-pricing-para {
+  line-height: 2;
+}
+.home-pricing-imgBox {
+  padding: 0;
+  width: 620px;
+}
+.home-pricing-priceImg {
+  width: 120px;
+}
+.home-pricing-imgtxt {
+  font-size: 10px;
+}
+.img-center {
+  width: 230px;
+  margin-right: 35px;
+}

@@ -1,0 +1,17 @@
+.home-education-box {
+  margin: 100px auto;
+}
+.home-education-img {
+  width: 435px;
+}
+.home-education-txtbox {
+  width: 550px;
+}
+.home-education-txtbox a {
+  text-decoration: none;
+  line-height: 2;
+  font-weight: 500;
+}
+.home-education-txt {
+  line-height: 2;
+}
