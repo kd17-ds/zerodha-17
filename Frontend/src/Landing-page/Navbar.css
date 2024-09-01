@@ -28,12 +28,12 @@
   flex-grow: 0;
 }
 .Nav-links a {
-  font-weight: 495;
   font-size: 15.8px;
+  text-decoration: none;
+  color: #666666;
 }
 .Nav-links a:hover {
   color: #387ed1 !important;
-  font-weight: 500;
   cursor: pointer;
 }
 .Nav-links a i {

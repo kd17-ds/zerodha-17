@@ -1,10 +1,28 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css'
-import App from './App'
+import Navbar from './Landing-page/Navbar';
+import HomePage from './Landing-page/Home/HomePage';
+import PricingPage from "./Landing-page/Pricing/PricingPage"
+import ProductsPage from "./Landing-page/Products/ProductsPage"
+import SignUpPage from "./Landing-page/SignUp/SignUpPage"
+import SupportPage from "./Landing-page/Support/SupportPage"
+import AboutPage from "./Landing-page/About/AboutPage"
+import Footer from './Landing-page/Footer';
+import NotFound from './Landing-page/NotFound';
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+        <Navbar />
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/signup' element={<SignUpPage />} />
+            <Route path='/pricing' element={<PricingPage />} />
+            <Route path='/product' element={<ProductsPage />} />
+            <Route path='/support' element={<SupportPage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Footer />
+    </BrowserRouter>
 )
