@@ -17,6 +17,9 @@
   text-decoration: none;
   font-weight: 500;
 }
+.home-assurance-boxPara a:hover {
+  color: black;
+}
 .home-assurance-linkBox {
   width: 625px;
 }
@@ -24,4 +27,7 @@
   text-decoration: none;
   font-weight: 500;
   line-height: 2px;
+}
+.home-assurance-linkBox a:hover {
+  color: black;
 }

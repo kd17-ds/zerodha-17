@@ -1,0 +1,81 @@
+.Footer {
+  background-color: #fbfbfb;
+  margin: 0;
+  width: 100%;
+  padding: 40px 0px 20px;
+}
+.Footer-introBox {
+  width: 250px;
+}
+.Footer-rights {
+  font-size: 13.5px;
+}
+.Footer-socials {
+  padding: 15px 0px;
+  border-bottom: 1px solid #eee;
+}
+.Footer-socials i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #666666;
+}
+.Footer-socials a i:hover {
+  color: #387ed1 !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.Footer-socials2 {
+  padding: 15px 0px;
+}
+.Footer-socials2 i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #666666;
+}
+.Footer-socials2 a i:hover {
+  color: #387ed1 !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.Footer-linkBox {
+  width: 250px;
+  margin-left: 50px;
+}
+.Footer-linkBox h3 {
+  font-size: 20px;
+}
+.Footer-linkBox a {
+  font-weight: 490;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.Footer-linkBox a:hover {
+  color: #387ed1 !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+.Footer-data p {
+  font-size: 11.5px;
+  color: #9b9b9b;
+  line-height: 1.8;
+}
+.Footer-data p a {
+  font-weight: 500;
+  color: #387ed1;
+  text-decoration: none;
+}
+.Footer-data p a:hover {
+  font-weight: 400;
+  color: #000000;
+}
+.Footer-para-linkbox a {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 22px;
+}
+.Footer-para-linkbox a:hover {
+  font-weight: 500;
+  color: #387ed1;
+}

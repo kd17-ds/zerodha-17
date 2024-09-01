@@ -10,6 +10,9 @@
   font-weight: 500;
   line-height: 2;
 }
+.home-pricing-txtBox a:hover {
+  color: black;
+}
 .home-pricing-para {
   line-height: 2;
 }
