@@ -1,0 +1,30 @@
+.about-hero-heading {
+  margin: 0px 50px;
+  padding: 85px;
+  border-bottom: 1px solid #eee;
+}
+.about-hero-heading h2 {
+  line-height: 1.5;
+}
+.about-hero-para {
+  padding: 80px 40px 80px 120px;
+}
+.about-hero-para p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+.about-hero-para2 {
+  padding: 80px 135px 80px 15px;
+}
+.about-hero-para2 p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+.about-hero-para2 p a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2;
+}
+.about-hero-para2 p a:hover {
+  color: black;
+}
