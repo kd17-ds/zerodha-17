@@ -1,0 +1,37 @@
+.products-universe-box {
+  margin: 75px auto;
+}
+.products-universe-Innerbox h5 {
+  font-weight: 400;
+}
+.products-universe-Innerbox h5 a {
+  text-decoration: none;
+}
+.products-universe-Innerbox h5 a:hover {
+  color: black;
+}
+.products-universe-Innerbox p {
+  font-size: 17px;
+}
+.product-universe-images {
+  width: 310px;
+}
+.product-universe-images p {
+  font-size: 12.7px;
+  color: #9b9b9b;
+  font-weight: 500;
+}
+.home-hero-btn {
+  background-color: #387ed1;
+  color: #ffffff;
+  width: 210px;
+  margin: 25px auto;
+  padding: 10px 30px;
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+}
+.home-hero-btn:hover {
+  background-color: #000000;
+}

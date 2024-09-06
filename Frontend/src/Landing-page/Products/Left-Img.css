@@ -1,0 +1,29 @@
+.product-leftside-box {
+  margin: 100px 0px;
+}
+.product-leftside-textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+  margin-left: 200px;
+}
+.product-leftside-textBox p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.product-leftside-linkBox1 a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2;
+  margin-right: 70px;
+}
+.product-leftside-linkBox1 a:hover {
+  color: black;
+}
+.product-leftside-linkBox2 a {
+  margin-right: 20px;
+}
+.product-leftside-linkBox2 a:hover {
+  opacity: 0.7;
+}
