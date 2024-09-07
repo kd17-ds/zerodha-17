@@ -1,8 +1,8 @@
-import Hero from "./Hero"
-import Awards from "./Awards"
-import Assurance from "./Assurance"
-import Pricing from "./Princing"
-import Education from "./Education"
+import Hero from "./Hero/Hero"
+import Awards from "./Awards/Awards"
+import Assurance from "./Assurance/Assurance"
+import Pricing from "./Pricing/Princing"
+import Education from "./Education/Education"
 import OpenAccount from "../OpenAccount"
 
 export default function HomePage() {
