@@ -1,12 +1,18 @@
 import "./Hero.css";
+import SubHeading from "../Home/Awards/SubHeading";
+
 export default function Hero() {
     return (
         <div className="container px-5">
             <div className="row text-center about-hero-heading">
-                <h2>
-                    We pioneered the discount broking model in India. <br />
-                    Now, we are breaking ground with our technology.
-                </h2>
+                <SubHeading
+                    subHeadTxt={
+                        <>
+                            We pioneered the discount broking model in India. <br />
+                            Now, we are breaking ground with our technology.
+                        </>
+                    }
+                />
             </div>
             <div className="row px-5">
                 <div className="col-6 about-hero-para">
@@ -33,17 +39,17 @@ export default function Hero() {
                         community initiatives to empower retail traders and investors.
                     </p>
                     <p>
-                        <a href="">Rainmatter</a>, our fintech fund and incubator, has invested in
-                        several fintech startups with the goal of growing the Indian
-                        capital markets.
+                        <a href="">Rainmatter</a>, our fintech fund and incubator, has
+                        invested in several fintech startups with the goal of growing the
+                        Indian capital markets.
                     </p>
                     <p>
                         And yet, we are always up to something new every day. Catch up on
-                        the latest updates on our <a href="">blog</a> or see what the media is <a href="">saying
-                            about us</a>.
+                        the latest updates on our <a href="">blog</a> or see what the media
+                        is <a href="">saying about us</a>.
                     </p>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

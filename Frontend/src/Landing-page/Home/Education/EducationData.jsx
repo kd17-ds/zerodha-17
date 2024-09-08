@@ -10,20 +10,24 @@ export default function EducationData() {
                 Varsity, the largest online stock market education book in the world
                 covering everything from the basics to advanced trading.
             </p>
-            <Links linkTxt={
-                <>
-                    Varsity <i className="fa-solid fa-arrow-right"></i>
-                </>
-            } />
+            <Links
+                linkTxt={
+                    <>
+                        Varsity <i className="fa-solid fa-arrow-right"></i>
+                    </>
+                }
+            />
             <p className="mt-4 home-education-txt">
-                TradingQ&A, the most active trading and investment community in
-                India for all your market related queries.
+                TradingQ&A, the most active trading and investment community in India
+                for all your market related queries.
             </p>
-            <Links linkTxt={
-                <>
-                    TradingQ&A <i className="fa-solid fa-arrow-right"></i>
-                </>
-            } />
+            <Links
+                linkTxt={
+                    <>
+                        TradingQ&A <i className="fa-solid fa-arrow-right"></i>
+                    </>
+                }
+            />
         </div>
     );
 }

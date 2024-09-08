@@ -13,8 +13,7 @@ export default function AssuranceImg() {
                 <Links
                     linkTxt={
                         <span className="mx-4">
-                            Explore our Products{" "}
-                            <i className="fa-solid fa-arrow-right"></i>
+                            Explore our Products <i className="fa-solid fa-arrow-right"></i>
                         </span>
                     }
                 />

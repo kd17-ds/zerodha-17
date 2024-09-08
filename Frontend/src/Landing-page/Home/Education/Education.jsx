@@ -1,5 +1,5 @@
 import "./Education.css";
-import EducationImg from "./EducationImg"
+import EducationImg from "./EducationImg";
 import EducationData from "./EducationData";
 
 export default function Education() {

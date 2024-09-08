@@ -4,7 +4,9 @@ import Links from "./Links";
 export default function AssuranceData() {
     return (
         <div className="mt-3">
-            <h2 className="mb-5" style={{ fontSize: "34px" }}>Trust with confidence</h2>
+            <h2 className="mb-5" style={{ fontSize: "34px" }}>
+                Trust with confidence
+            </h2>
             <DetailBox
                 detBoxHead={"Customer-first always"}
                 detBoxPara={

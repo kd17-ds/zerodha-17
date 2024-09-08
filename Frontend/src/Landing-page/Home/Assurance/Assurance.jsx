@@ -1,6 +1,6 @@
 import "./Assurance.css";
 import AssuranceData from "./AssuranceData";
-import AssuranceImg from "./AssuranceImg"
+import AssuranceImg from "./AssuranceImg";
 
 export default function Assurance() {
     return (

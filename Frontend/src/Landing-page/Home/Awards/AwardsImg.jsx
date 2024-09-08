@@ -1,6 +1,6 @@
 export default function AwardsImg() {
     return (
-        <div >
+        <div>
             <img src="media/images/largestBroker.svg" alt="" />
         </div>
     );
