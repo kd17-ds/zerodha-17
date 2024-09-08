@@ -1,5 +1,5 @@
-import Hero from "./Hero"
-import Team from "./Team"
+import Hero from "./Hero/Hero"
+import Team from "./Team/Team"
 
 export default function AboutPage() {
     return (

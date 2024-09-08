@@ -1,5 +1,5 @@
 import "./Hero.css";
-import SubHeading from "../Home/Awards/SubHeading";
+import SubHeading from "../../Home/Awards/SubHeading";
 
 export default function Hero() {
     return (

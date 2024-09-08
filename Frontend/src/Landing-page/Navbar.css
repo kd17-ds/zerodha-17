@@ -37,6 +37,9 @@
   color: #387ed1 !important;
   cursor: pointer;
 }
+.Nav-links a:focus {
+  color: #387ed1 !important;
+}
 .Nav-links a i {
   font-size: 18px;
   line-height: 2;
