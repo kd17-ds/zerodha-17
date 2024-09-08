@@ -1,0 +1,10 @@
+.product-rightside-box {
+  margin: 100px 0px;
+}
+.product-rightside-textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+  margin-right: 200px;
+}

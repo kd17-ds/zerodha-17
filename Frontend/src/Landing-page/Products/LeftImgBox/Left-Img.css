@@ -1,0 +1,10 @@
+.product-leftside-box {
+  margin: 100px 0px;
+}
+.product-leftside-textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+  margin-left: 200px;
+}

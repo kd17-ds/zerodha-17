@@ -1,18 +1,21 @@
 import "./Universe.css";
+import SignUpButton from "../../Home/Hero/SignUpButton"
+import Links from "../../Home/Assurance/Links";
+
 export default function Universe() {
     return (
         <div className="container px-5 products-universe-box">
             <div className="row px-5 text-center products-universe-Innerbox">
                 <h5 className="mb-5">
                     Want to know more about our technology stack? Check out the{" "}
-                    <a href="">Zerodha.tech</a> blog.
+                    <Links linkTxt={"Zerodha.tech "} />blog.
                 </h5>
                 <h2 className="mt-5 mb-4">The Zerodha Universe</h2>
                 <p className="mb-5">
                     Extend your trading and investment experience even further with our
                     partner platforms
                 </p>
-                <div className="row d-flex justify-content-evenly mb-5">
+                <div className="row d-flex justify-content-evenly mb-5 px-0 products-universe-imageBox">
                     <div className="col-4 d-flex flex-column align-items-center product-universe-images">
                         <img src="media/images/zerodhaFundhouse.png" alt="" className="mb-4" style={{ width: "200px" }} />
                         <p >
@@ -37,7 +40,7 @@ export default function Universe() {
                         </p>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-evenly mb-5">
+                <div className="row d-flex justify-content-evenly mb-2 px-0 products-universe-imageBox">
                     <div className="col-4 d-flex flex-column align-items-center product-universe-images">
                         <img src="media/images/streakLogo.png" alt="" className="mb-4" style={{ width: "170px" }} />
                         <p>
@@ -63,7 +66,7 @@ export default function Universe() {
                         </p>
                     </div>
                 </div>
-                <button className="home-hero-btn">Sign up for free</button>
+                <SignUpButton btnText={"Sign up for free"} />
             </div>
         </div>
     );

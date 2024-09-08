@@ -1,4 +1,6 @@
 import "./Right-Img.css";
+import ImageBox from "./ImageBox";
+import DataBox from "./DataBox";
 
 export default function RightImg({
     imageUrl,
@@ -10,12 +12,14 @@ export default function RightImg({
         <div className="container px-5">
             <div className="row px-5 product-rightside-box">
                 <div className="col-6 product-rightside-textBox">
-                    <h2 className="mb-4">{productName}</h2>
-                    <p>{productDescr}</p>
-                    <a href="">{link} <i className="fa-solid fa-arrow-right"></i></a>
+                    <DataBox
+                        productName={productName}
+                        productDescr={productDescr}
+                        link={link}
+                    />
                 </div>
-                <div className="col-6 d-flex justify-content-center">
-                    <img src={imageUrl} alt="" />
+                <div className="col-6">
+                    <ImageBox imageUrl={imageUrl} />
                 </div>
             </div>
         </div>

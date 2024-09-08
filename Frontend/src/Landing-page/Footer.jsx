@@ -1,4 +1,6 @@
 import "./Footer.css";
+import Links from "./Home/Assurance/Links"
+
 export default function Footer() {
     return (
         <div className="Footer">
@@ -80,19 +82,19 @@ export default function Footer() {
                         Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence
                         Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka,
                         India. For any complaints pertaining to securities broking please
-                        write to <a href="">complaints@zerodha.com</a>, for DP related to{" "}
-                        <a href="">dp@zerodha.com</a>. Please ensure you carefully read the
+                        write to <Links linkTxt={"complaints@zerodha.com"} />, for DP related to{" "}
+                        <Links linkTxt={"dp@zerodha.com"} />. Please ensure you carefully read the
                         Risk Disclosure Document as prescribed by SEBI | ICF
                     </p>
                     <p>
-                        Procedure to file a complaint on <a href="">SEBI SCORES</a>:
+                        Procedure to file a complaint on <Links linkTxt={"SEBI SCORES"} />:
                         Register on SCORES portal. Mandatory details for filing complaints
                         on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits:
                         Effective Communication, Speedy redressal of the grievances
                     </p>
                     <p>
-                        <a href="">Smart Online Dispute Resolution</a> |{" "}
-                        <a href="">Grievances Redressal Mechanism</a>
+                        <Links linkTxt={"Smart Online Dispute Resolution"} /> |{" "}
+                        <Links linkTxt={"Grievances Redressal Mechanism"} />
                     </p>
                     <p>
                         Investments in securities market are subject to market risks; read
@@ -123,7 +125,7 @@ export default function Footer() {
                         bank account. As a business we don't give stock tips, and have not
                         authorized anyone to trade on behalf of others. If you find anyone
                         claiming to be part of Zerodha and offering such services, please
-                        <a href=""> create a ticket here</a>.
+                        <Links linkTxt={" create a ticket here"} />.
                     </p>
                     <div className="Footer-para-linkbox text-center">
                         <a href="">NSE</a>

@@ -1,13 +1,12 @@
-import Hero from "./Hero";
-import LeftImg from "./Left-Img";
-import RightImg from "./Right-Img";
-import Universe from "./Universe";
+import Hero from "./Hero/Hero";
+import LeftImg from "./LeftImgBox/Left-Img";
+import RightImg from "./RightImgBox/Right-Img";
+import Universe from "./Universe/Universe";
 
 export default function HomePage() {
     return (
         <>
             <Hero />
-
             <LeftImg
                 imageUrl={"media//images/kite.png"}
                 productName={"Kite"}
