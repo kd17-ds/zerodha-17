@@ -1,0 +1,21 @@
+.Pricing-hero-headBox {
+  padding: 80px 0px 100px;
+  border-bottom: 1px solid #eee;
+  margin: 0px 40px;
+}
+.Pricing-hero-headBox p {
+  line-height: 1.6;
+  font-size: 22px;
+}
+.Pricing-hero-Imgbox {
+  padding: 80px 0px;
+  margin: 0px 20px;
+  border-bottom: 1px solid #eee;
+}
+.Pricing-hero-Imgtitle {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pricing-hero-images {
+  width: 250px;
+}

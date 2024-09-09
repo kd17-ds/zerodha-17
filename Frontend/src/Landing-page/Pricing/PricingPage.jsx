@@ -1,6 +1,6 @@
-import Hero from "./Hero"
-import OpenAccount from "../OpenAccount"
-import Brokrage from "./Brokrage"
+import Hero from "./Hero/Hero";
+import OpenAccount from "../OpenAccount";
+import Brokrage from "./Brokrage/Brokrage";
 
 export default function PricingPage() {
     return (
@@ -9,5 +9,5 @@ export default function PricingPage() {
             <OpenAccount />
             <Brokrage />
         </>
-    )
+    );
 }
