@@ -1,5 +1,5 @@
-import Hero from "./Hero"
-import CreateTicket from "./CreateTicket"
+import Hero from "./Hero/Hero"
+import CreateTicket from "./Ticket/CreateTicket"
 
 export default function SuppotPage() {
 
