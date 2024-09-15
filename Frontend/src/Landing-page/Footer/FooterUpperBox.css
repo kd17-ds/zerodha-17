@@ -1,9 +1,3 @@
-.Footer {
-  background-color: #fbfbfb;
-  margin: 0;
-  width: 100%;
-  padding: 40px 0px 20px;
-}
 .Footer-introBox {
   width: 250px;
 }
@@ -53,20 +47,4 @@
   color: #387ed1 !important;
   font-weight: 500 !important;
   cursor: pointer;
-}
-.Footer-data p {
-  font-size: 11.5px;
-  color: #9b9b9b;
-  line-height: 1.8;
-}
-.Footer-para-linkbox a {
-  text-decoration: none;
-  color: #9b9b9b;
-  font-size: 13px;
-  font-weight: 500;
-  margin-left: 22px;
-}
-.Footer-para-linkbox a:hover {
-  font-weight: 500;
-  color: #387ed1;
 }

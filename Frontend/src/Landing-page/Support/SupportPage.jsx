@@ -1,5 +1,6 @@
 import Hero from "./Hero/Hero"
 import CreateTicket from "./Ticket/CreateTicket"
+import SupportFooter from "./SupportFooter"
 
 export default function SuppotPage() {
 
@@ -7,6 +8,7 @@ export default function SuppotPage() {
         <div>
             <Hero />
             <CreateTicket />
+            <SupportFooter />
         </div>
     )
 }
