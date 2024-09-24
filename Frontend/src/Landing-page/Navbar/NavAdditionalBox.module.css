@@ -1,0 +1,80 @@
+.NavAdditionals {
+  width: 680px;
+  z-index: 15;
+  position: absolute;
+  top: 68px;
+  right: 210px;
+  box-shadow: 15px 0px 8px #eee;
+}
+/* NavAdditional UpperBox */
+.topBox {
+  height: 148px;
+  background-color: #ffffff;
+  box-shadow: -3px -3px 8px #eee;
+}
+.topBox img {
+  height: 50px;
+  width: 50px;
+}
+.topBoxlinkHead {
+  margin: 15px 0px 0px;
+  font-size: 14.5px;
+  line-height: 1;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+.topBoxlinkHead:hover {
+  color: #387ed1;
+  cursor: pointer;
+}
+.topBoxlinkDesc {
+  margin: 10px 0px 0px;
+  font-size: 12.3px;
+  line-height: 1;
+  color: #9b9b9b;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* NavAdditional BottomBox */
+.bottomBox {
+  height: 217px;
+  background-color: #fafafb;
+  padding: 0px 0px 0px 20px;
+  box-shadow: -3px 3px 8px #eee;
+}
+.bottomBoxLinkHead {
+  font-size: 17px;
+}
+.bottomBoxLinks {
+  font-size: 15px;
+  line-height: 1.9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  text-decoration: none;
+}
+.bottomBoxLinks:hover {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+/* Extra Large devices (1700px and above) */
+@media (min-width: 1700px) {
+  .NavAdditionals {
+    right: 405px;
+  }
+}
+
+/* Large devices (up to 1300px) */
+@media (max-width: 1300px) {
+  .NavAdditionals {
+    right: 50px;
+  }
+}
+
+/* Medium devices (up to 1024px) */
+@media (max-width: 1024px) {
+  .NavAdditionals {
+    right: 30px;
+  }
+}

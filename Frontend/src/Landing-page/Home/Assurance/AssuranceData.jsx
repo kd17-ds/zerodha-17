@@ -29,8 +29,8 @@ export default function AssuranceData() {
                 detBoxHead={"Do better with money"}
                 detBoxPara={
                     <>
-                        With initiatives like <Links linkTxt={"Nudge"} /> and{" "}
-                        <Links linkTxt={"Kill Switch"} />, we don't just facilitate
+                        With initiatives like <Links linkAdd={"/support"} linkTxt={"Nudge"} /> and{" "}
+                        <Links linkAdd={"/support"} linkTxt={"Kill Switch"} />, we don't just facilitate
                         transactions, but actively help you do better with your money.
                     </>
                 }

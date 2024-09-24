@@ -1,0 +1,10 @@
+.links {
+  text-decoration: none;
+  line-height: 2px;
+  color: #387ed1 !important;
+  font-weight: 500;
+}
+.links:hover {
+  cursor: pointer;
+  color: black !important;
+}

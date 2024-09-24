@@ -1,0 +1,88 @@
+.navbar {
+  /* display: block; */
+  width: 100%;
+  height: 68px;
+  box-shadow: 2px 1px 2px #eee;
+  padding: 0px 200px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+.NavBox {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* .container-fluid {
+  padding: 0;
+} */
+.NavLinks {
+  /* height: 100%; */
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 45px;
+  margin-top: 4px;
+}
+/* .navbar-collapse {
+  flex-grow: 0;
+} */
+.NavLinks a {
+  font-size: 15.3px;
+  text-decoration: none;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.NavLinks a:hover {
+  color: #387ed1 !important;
+  cursor: pointer;
+}
+.NavLinks a:focus {
+  color: #387ed1 !important;
+}
+.NavLinks a i {
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* Extra Large devices (1700px and above) */
+@media (min-width: 1700px) {
+  .navbar {
+    padding: 0px 380px;
+  }
+}
+
+/* Large devices (up to 1300px) */
+@media (max-width: 1300px) {
+  .navbar {
+    padding: 0px 30px;
+  }
+}
+
+/* Medium devices (up to 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0px 10px;
+  }
+}
+
+/* Medium devices (up to 1024px) */
+@media (max-width: 992px) {
+  .navbar {
+    height: 60px;
+  }
+  .ZerodhaLogo {
+    width: 150px;
+    height: 20px;
+  }
+  .NavToggler {
+    border: none;
+    font-size: 17px;
+    margin-top: 4px;
+  }
+  .hide {
+    display: none;
+  }
+}

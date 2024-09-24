@@ -1,7 +1,7 @@
-import "./Links.css";
+import styles from "./Links.module.css";
 
-export default function Links({ linkTxt }) {
+export default function Links({ linkTxt, linkAdd }) {
     return (
-        <a href="">{linkTxt}</a>
+        <a className={styles.links} href={linkAdd}>{linkTxt}</a>
     );
 }

@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import './index.css'
-import Navbar from './Landing-page/Navbar';
+import Navbar from './Landing-page/Navbar/Navbar';
 import HomePage from './Landing-page/Home/HomePage';
 import PricingPage from "./Landing-page/Pricing/PricingPage"
 import ProductsPage from "./Landing-page/Products/ProductsPage"
