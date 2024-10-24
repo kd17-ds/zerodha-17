@@ -1,0 +1,29 @@
+.Awards {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1300px;
+}
+.AwardsRowBox {
+  width: 100%;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .Awards {
+    max-width: 1400px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .Awards {
+    max-width: 1020px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .Awards {
+    padding: 0px 35px;
+  }
+}

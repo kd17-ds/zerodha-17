@@ -1,15 +1,15 @@
-import "./Awards.css";
+import styles from "./Awards.module.css";
 import AwardsData from "./AwardsData";
 import AwardsImg from "./AwardsImg";
 
 export default function Awards() {
   return (
-    <div className="container home-awards-box px-5">
-      <div className="row px-5">
-        <div className="col-6">
+    <div className={styles.Awards}>
+      <div className={`row ${styles.AwardsRowBox} text-center`}>
+        <div className="col-12 col-md-6">
           <AwardsImg />
         </div>
-        <div className="col-6 mt-2">
+        <div className="col-12 col-md-6  ">
           <AwardsData />
         </div>
       </div>

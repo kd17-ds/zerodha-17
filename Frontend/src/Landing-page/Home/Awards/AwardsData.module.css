@@ -1,0 +1,89 @@
+.AwardsTxtBox {
+  width: 100%;
+  max-width: 570px;
+  text-align: left;
+  margin-left: 40px;
+}
+.AwardsTxtBoxImg {
+  width: 100%;
+  max-width: 570px;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .AwardsTxtBox {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .AwardsTxtBoxImg {
+    max-width: 600px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .AwardsTxtBox {
+    margin-left: 15px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1040px) {
+  .AwardsTxtBox {
+    margin-left: 0px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .AwardsTxtBox {
+    max-width: 100%;
+    margin: 75px 0px 0px 0px;
+  }
+  .AwardsTxtBoxImg {
+    max-width: 100%;
+  }
+}
+
+/* Styles for large mobile devices like iPhone Plus models */
+@media only screen and (max-width: 500px) {
+  .List1 {
+    width: 200px;
+  }
+  .List2 {
+    width: 200px;
+  }
+}
+
+/* Styles for standard mobile devices like iPhone X and Galaxy S models */
+@media only screen and (max-width: 450px) {
+  .List1 {
+    width: 160px;
+  }
+  .List1 li {
+    font-size: 14px;
+  }
+  .List2 {
+    width: 160px;
+  }
+  .List2 li {
+    font-size: 14px;
+  }
+}
+
+/* Styles for smaller smartphones (e.g., older iPhones, smaller Android devices) */
+@media only screen and (max-width: 380px) {
+  .List1 {
+    width: 150px;
+  }
+  .List1 li {
+    font-size: 12px;
+  }
+  .List2 {
+    width: 130px;
+  }
+  .List2 li {
+    font-size: 12px;
+  }
+}

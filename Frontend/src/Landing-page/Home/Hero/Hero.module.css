@@ -1,0 +1,52 @@
+.Container {
+  margin: 68px auto;
+  padding: 0px 20px;
+}
+.HeroImg {
+  max-width: 743px;
+}
+.HeroPara {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .Container {
+    margin: 90px auto;
+  }
+  .HeroImg {
+    max-width: 975px;
+  }
+  .HeroPara {
+    line-height: 1.2;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1024px) {
+  .HeroPara {
+    font-size: 21.5px;
+    line-height: 1.2;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 767px) {
+  .Container {
+    margin: 106px auto;
+  }
+  .HeroImg {
+    max-width: 100%;
+  }
+  .HeroPara {
+    line-height: 1.6;
+  }
+}
+
+/* Styles for large mobile devices like iPhone Plus models */
+@media only screen and (max-width: 480px) {
+  .Container {
+    margin: 65px auto;
+  }
+}

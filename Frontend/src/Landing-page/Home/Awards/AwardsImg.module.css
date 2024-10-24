@@ -1,0 +1,36 @@
+.AwardsImg {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px 10px;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .AwardsImg {
+    margin: 4px 10px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1040px) {
+  .AwardsImgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 25px;
+  }
+  .AwardsImg {
+    max-width: 400px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .AwardsImgBox {
+    margin-top: 0px;
+  }
+  .AwardsImg {
+    max-width: 450px;
+  }
+}
