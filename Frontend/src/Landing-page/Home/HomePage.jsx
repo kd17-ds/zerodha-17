@@ -10,8 +10,8 @@ export default function HomePage() {
         <>
             <Hero />
             <Awards />
-            {/* <Assurance />
-            <Pricing />
+            <Assurance />
+            {/* <Pricing />
             <Education />
             <OpenAccount /> */}
         </>

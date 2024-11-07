@@ -1,0 +1,73 @@
+.AssuranceImg {
+  max-width: 625px;
+  width: 100%;
+  margin-top: 30px;
+}
+.AssuranceImg_LinkBox {
+  max-width: 625px;
+  width: 100%;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .AssuranceImg {
+    min-width: 540px;
+    margin-top: 50px;
+  }
+  .AssuranceImg_LinkBox {
+    min-width: 540px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1090px) {
+  .AssuranceImg {
+    min-width: 100%;
+    margin-top: 70px;
+  }
+  .AssuranceImg_LinkBox {
+    min-width: 100%;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 960px) {
+  .AssuranceImg {
+    min-width: 420px;
+    margin-top: 140px;
+  }
+  .AssuranceImg_LinkBox {
+    min-width: 420px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 850px) {
+  .AssuranceImg {
+    margin-top: 180px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .AssuranceImg {
+    margin-top: 30px;
+    width: 100%;
+    min-width: 320px;
+  }
+  .AssuranceImg_LinkBox {
+    min-width: 320px;
+  }
+}
+
+/* Styles for standard mobile devices like iPhone X and Galaxy S models */
+@media only screen and (max-width: 440px) {
+  .AssuranceTxtBox {
+    max-width: 315px;
+  }
+  .AssuranceImg_LinkBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

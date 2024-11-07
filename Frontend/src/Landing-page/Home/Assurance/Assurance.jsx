@@ -1,15 +1,15 @@
-import "./Assurance.css";
+import styles from "./Assurance.module.css";
 import AssuranceData from "./AssuranceData";
 import AssuranceImg from "./AssuranceImg";
 
 export default function Assurance() {
     return (
-        <div className="container home-assurance-box px-5">
-            <div className="row px-5">
-                <div className="col-6 mt-3 home-assurance-txtBox">
+        <div className={`${styles.AssuranceBox}`}>
+            <div className="row">
+                <div className={`col-md-6 col-12 ${styles.AssuranceTxtBox}`}>
                     <AssuranceData />
                 </div>
-                <div className="col-6 home-assurance-rightBox">
+                <div className={`col-md-6 col-12  ${styles.AssuranceRightBox}`}>
                     <AssuranceImg />
                 </div>
             </div>

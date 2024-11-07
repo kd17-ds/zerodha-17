@@ -1,0 +1,94 @@
+.AssuranceBox {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 75px;
+}
+.AssuranceTxtBox {
+  width: 450px;
+}
+.AssuranceRightBox {
+  margin-left: 115px;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .AssuranceBox {
+    max-width: 1400px;
+  }
+  .AssuranceTxtBox {
+    width: 470px;
+  }
+  .AssuranceRightBox {
+    margin-left: 150px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .AssuranceBox {
+    max-width: 1020px;
+    padding: 0px 0px;
+  }
+  .AssuranceTxtBox {
+    width: 430px;
+  }
+  .AssuranceRightBox {
+    margin-left: 60px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1090px) {
+  .AssuranceBox {
+    padding: 0px 15px;
+  }
+  .AssuranceTxtBox {
+    width: 100%;
+    max-width: 400px;
+  }
+  .AssuranceRightBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 960px) {
+  .AssuranceTxtBox {
+    width: 100%;
+    max-width: 370px;
+  }
+  .AssuranceRightBox {
+    margin-left: 40px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 850px) {
+  .AssuranceTxtBox {
+    max-width: 325px;
+  }
+  .AssuranceRightBox {
+    margin-left: 15px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .AssuranceTxtBox {
+    min-width: 100%;
+  }
+  .AssuranceRightBox {
+    margin: 0px;
+  }
+}
+
+/* Styles for standard mobile devices like iPhone X and Galaxy S models */
+@media only screen and (max-width: 440px) {
+  .AssuranceTxtBox {
+    max-width: 310px;
+  }
+}

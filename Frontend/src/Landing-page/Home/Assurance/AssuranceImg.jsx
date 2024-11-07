@@ -1,4 +1,4 @@
-import "./AssuranceImg.css";
+import styles from "./AssuranceImg.module.css";
 import Links from "./Links";
 import { Link } from "react-router-dom";
 
@@ -9,10 +9,10 @@ export default function AssuranceImg() {
                 <img
                     src="media/images/ecosystem.png"
                     alt=""
-                    className="home-assurance-img mt-4"
+                    className={`${styles.AssuranceImg}`}
                 />
             </Link>
-            <div className="home-assurance-linkBox mt-3">
+            <div className={`${styles.AssuranceImg_LinkBox} mt-3`}>
                 <Links
                     linkTxt={
                         <span className="mx-4">
