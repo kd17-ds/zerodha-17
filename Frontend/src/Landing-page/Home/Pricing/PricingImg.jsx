@@ -1,34 +1,40 @@
-import "./PricingImg.css";
+import styles from "./PricingImg.module.css";
 
 export default function PricingImg() {
     return (
-        <div className="home-pricing-imgBox mt-5">
-            <div className="row">
-                <div className="col-4 d-flex align-items-end  px-0">
+        <div className={`${styles.PricingImgCont}`}>
+            <div className="row ">
+                <div
+                    className={`${styles.PricingImg1} col-4  d-flex align-items-end  px-0`}
+                >
                     <img
                         src="media/images/pricing0.svg"
                         alt=""
-                        className="home-pricing-priceImg"
+                        className={styles.PricingImg}
                     />
-                    <p className="home-pricing-imgtxt">Free account opening</p>
+                    <p className={styles.PricingImgTxt}>Free account opening</p>
                 </div>
-                <div className="col-5 d-flex align-items-end img-center px-0">
+                <div
+                    className={`col-5 d-flex align-items-end ${styles.ImgCenter} px-0`}
+                >
                     <img
                         src="media/images/pricingMF.svg"
                         alt=""
-                        className="home-pricing-priceImg"
+                        className={styles.PricingImg}
                     />
-                    <p className="home-pricing-imgtxt">
+                    <p className={styles.PricingImgTxt}>
                         Free equity delivery and direct mutual funds
                     </p>
                 </div>
-                <div className="col-3 d-flex align-items-end  px-0">
+                <div
+                    className={`${styles.PricingImg1} col-3 d-flex align-items-end  px-0`}
+                >
                     <img
                         src="media/images/intradayTrades.svg"
                         alt=""
-                        className="home-pricing-priceImg"
+                        className={styles.PricingImg}
                     />
-                    <p className="home-pricing-imgtxt">Intraday and F&O</p>
+                    <p className={styles.PricingImgTxt}>Intraday and F&O</p>
                 </div>
             </div>
         </div>

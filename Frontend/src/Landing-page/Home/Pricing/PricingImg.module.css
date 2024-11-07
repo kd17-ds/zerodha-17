@@ -1,0 +1,75 @@
+.PricingImgCont {
+  padding: 0;
+  width: 100%;
+  min-width: 620px;
+  margin-top: 50px;
+}
+.PricingImg {
+  width: 120px;
+}
+.PricingImgTxt {
+  font-size: 10px;
+}
+.ImgCenter {
+  width: 230px;
+  margin-right: 35px;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .PricingImgCont {
+    padding: 0;
+    width: 100%;
+    min-width: 600px;
+  }
+  .PricingImg1 {
+    width: 180px;
+  }
+  .ImgCenter {
+    margin: 0px 15px;
+    width: 220px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1160px) {
+  .PricingImgCont {
+    margin: 0px;
+    min-width: 440px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 905px) {
+  .PricingImgCont {
+    min-width: 380px;
+  }
+  .PricingImg1 {
+    width: 150px;
+  }
+  .ImgCenter {
+    margin: 0px 15px;
+    width: 210px;
+  }
+}
+
+/* Styles for standard mobile devices like iPhone X and Galaxy S models */
+@media only screen and (max-width: 470px) {
+  .PricingImgCont {
+    min-width: 300px;
+  }
+  .PricingImg1 {
+    width: 150px;
+  }
+  .ImgCenter {
+    margin: 0px 15px;
+    width: 210px;
+  }
+}
+
+/* Styles for standard mobile devices like iPhone X and Galaxy S models */
+@media only screen and (max-width: 400px) {
+  .ImgCenter {
+    margin: 0px 0px;
+  }
+}

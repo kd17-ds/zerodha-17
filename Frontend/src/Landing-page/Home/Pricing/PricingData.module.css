@@ -1,0 +1,29 @@
+.PricingDataBox {
+  padding: 0;
+  width: 480px;
+}
+.PricingPara {
+  line-height: 1.8;
+  font-size: 16.8px;
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1060px) {
+  .PricingDataBox {
+    width: 390px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 905px) {
+  .PricingDataBox {
+    width: 300px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .PricingDataBox {
+    width: 100%;
+  }
+}

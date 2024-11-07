@@ -1,0 +1,76 @@
+.PricingBox {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 75px;
+}
+.PricingTxtBox {
+  width: 100%;
+  max-width: 480px;
+}
+.PricingImgBox {
+  margin-top: 55px;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .PricingBox {
+    max-width: 1400px;
+  }
+  .PricingTxtBox {
+    max-width: 612px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .PricingBox {
+    padding: 0px 0px;
+    max-width: 1020px;
+  }
+  .PricingTxtBox {
+    max-width: 460px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1160px) {
+  .PricingImgBox {
+    margin-left: 60px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1060px) {
+  .PricingBox {
+    padding: 0px 15px;
+  }
+  .PricingTxtBox {
+    width: 100%;
+    max-width: 390px;
+  }
+  .PricingImgBox {
+    margin-left: 50px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 905px) {
+  .PricingTxtBox {
+    max-width: 300px;
+  }
+  .PricingImgBox {
+    margin-left: 30px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .PricingTxtBox {
+    width: 100%;
+    min-width: 100%;
+  }
+  .PricingImgBox {
+    margin-left: 0px;
+  }
+}
