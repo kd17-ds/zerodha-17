@@ -1,4 +1,4 @@
-import "./EducationImg.css";
+import styles from "./EducationImg.module.css";
 
 export default function EducationImg() {
     return (
@@ -6,7 +6,7 @@ export default function EducationImg() {
             <img
                 src="/media/images/education.svg"
                 alt=""
-                className="home-education-img"
+                className={styles.EducationImg}
             />
         </>
     );

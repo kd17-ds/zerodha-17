@@ -1,0 +1,104 @@
+.FooterUpperBox {
+  padding: 50px;
+}
+.FooterIntroBox {
+  width: 250px;
+}
+.FooterRights {
+  font-size: 13.5px;
+}
+.FooterSocials {
+  padding: 15px 0px;
+  border-bottom: 1px solid #eee;
+}
+.FooterSocials i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #666666;
+}
+.FooterSocials a i:hover {
+  color: #387ed1 !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.FooterSocials2 {
+  padding: 15px 0px;
+}
+.FooterSocials2 i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #666666;
+}
+.FooterSocials2 a i:hover {
+  color: #387ed1 !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.FooterLinkBox {
+  width: 250px;
+  margin-left: 50px;
+}
+.FooterLinkBox h3 {
+  font-size: 20px;
+}
+.FooterLinkBox a {
+  font-weight: 490;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.FooterLinkBox a:hover {
+  color: #387ed1 !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .FooterLinkBox {
+    width: 230px;
+    margin-left: 10px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1140px) {
+  .FooterUpperBox {
+    max-width: 100%;
+    padding: 30px;
+  }
+  .FooterLinkBox {
+    width: 210px;
+    margin-left: 20px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1000px) {
+  .FooterLinkBox {
+    width: 200px;
+    margin-left: 0px;
+  }
+  .FooterLinkBox h3 {
+    font-size: 19px;
+  }
+  .FooterLinkBox a {
+    font-size: 15px;
+  }
+}
+
+/* Styles for standard tablets */
+@media only screen and (max-width: 900px) {
+  .FooterLinkBox {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .FooterLinkBox h3 {
+    font-size: 20px;
+  }
+  .FooterLinkBox a {
+    font-weight: 490;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,52 @@
+.EducationBox {
+  margin: 100px auto;
+  padding: 0px 75px;
+  width: 100%;
+  max-width: 1300px;
+}
+.EducationTxtBox {
+  width: 500px;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .EducationBox {
+    max-width: 1400px;
+  }
+  .EducationTxtBox {
+    width: 600px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .EducationBox {
+    max-width: 1020px;
+    padding: 0px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1070px) {
+  .EducationBox {
+    padding: 0px 15px;
+  }
+  .EducationTxtBox {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 870px) {
+  .EducationTxtBox {
+    max-width: 355px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .EducationTxtBox {
+    min-width: 100%;
+  }
+}

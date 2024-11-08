@@ -1,0 +1,21 @@
+.Footer {
+  background-color: #fbfbfb;
+  margin: 0;
+  width: 100%;
+  padding: 40px 0px 20px;
+}
+.FooterBox {
+  margin: 0px auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .Footer {
+    padding: 20px 0px 20px;
+  }
+  .FooterBox {
+    max-width: 1100px;
+  }
+}

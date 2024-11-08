@@ -1,4 +1,4 @@
-import "./OpenAccount.css";
+import styles from "./OpenAccount.module.css";
 import SignUpButton from "./Home/Hero/SignUpButton";
 import SubHeading from "./Home/Awards/SubHeading";
 

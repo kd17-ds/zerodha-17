@@ -1,0 +1,28 @@
+.FooterData {
+  padding: 0px 50px;
+  margin: 0px auto;
+}
+.FooterData p {
+  font-size: 11.5px;
+  color: #9b9b9b;
+  line-height: 1.8;
+}
+.FooterParaLinkBox a {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 22px;
+}
+.FooterParaLinkBox a:hover {
+  font-weight: 500;
+  color: #387ed1;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1140px) {
+  .FooterData {
+    max-width: 100%;
+    padding: 0px 15px;
+  }
+}

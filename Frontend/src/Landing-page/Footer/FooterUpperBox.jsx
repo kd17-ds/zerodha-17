@@ -1,9 +1,9 @@
-import "./FooterUpperBox.css";
+import styles from "./FooterUpperBox.module.css";
 
 export default function FooterUpperBox() {
     return (
-        <div className="row px-5 mb-5">
-            <div className="col-4 Footer-introBox">
+        <div className={`row ${styles.FooterUpperBox} mb-5`}>
+            <div className={`col-md-4 col-12 ${styles.FooterIntroBox}`}>
                 <img
                     src="media/images/logo.svg"
                     alt="Logo"
@@ -11,10 +11,10 @@ export default function FooterUpperBox() {
                     height="20"
                     className="mb-3"
                 />
-                <p className="Footer-rights">
+                <p className={styles.FooterRights}>
                     © 2010 - 2024, Zerodha Broking Ltd. All rights reserved.
                 </p>
-                <div className="Footer-socials flex">
+                <div className={`${styles.FooterSocials} flex`}>
                     <a>
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
@@ -28,7 +28,7 @@ export default function FooterUpperBox() {
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
-                <div className="Footer-socials2 flex">
+                <div className={`${styles.FooterSocials2} flex`}>
                     <a>
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -40,7 +40,7 @@ export default function FooterUpperBox() {
                     </a>
                 </div>
             </div>
-            <div className="col-4 Footer-linkBox">
+            <div className={`col-md-4 col-12 ${styles.FooterLinkBox}`}>
                 <h3 className="mb-4">Company</h3>
                 <a>About</a> <br />
                 <a>Products</a> <br />
@@ -51,7 +51,7 @@ export default function FooterUpperBox() {
                 <a>Press & media</a> <br />
                 <a>Zerodha Cares (CSR)</a> <br />
             </div>
-            <div className="col-4 Footer-linkBox">
+            <div className={`col-md-4 col-12 ${styles.FooterLinkBox}`}>
                 <h3 className="mb-4">Support</h3>
                 <a>Contact us</a> <br />
                 <a>Support Portal</a> <br />
@@ -63,7 +63,7 @@ export default function FooterUpperBox() {
                 <a>How to file a complaint?</a> <br />
                 <a>Status of your complaints</a> <br />
             </div>
-            <div className="col-4 Footer-linkBox">
+            <div className={`col-md-4 col-12 ${styles.FooterLinkBox}`}>
                 <h3 className="mb-4">Account</h3>
                 <a>Open an account</a> <br />
                 <a>Fund transfer</a> <br />

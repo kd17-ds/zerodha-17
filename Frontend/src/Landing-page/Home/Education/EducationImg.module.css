@@ -1,0 +1,37 @@
+.EducationImg {
+  width: 435px;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .EducationImg {
+    width: 460px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1070px) {
+  .EducationImg {
+    margin-top: 95px;
+    max-width: 380px;
+    width: 100%;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 870px) {
+  .EducationImg {
+    margin-top: 105px;
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .EducationImg {
+    margin-top: 0px;
+    min-width: 80%;
+    width: 100%;
+  }
+}

@@ -12,8 +12,8 @@ export default function HomePage() {
             <Awards />
             <Assurance />
             <Pricing />
-            {    /* <Education />
-            <OpenAccount /> */}
+            <Education />
+            <OpenAccount />
         </>
     );
 }
