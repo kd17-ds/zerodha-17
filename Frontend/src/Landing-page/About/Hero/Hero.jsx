@@ -1,10 +1,10 @@
-import "./Hero.css";
+import styles from "./Hero.module.css";
 import SubHeading from "../../Home/Awards/SubHeading";
 
 export default function Hero() {
     return (
-        <div className="container px-5">
-            <div className="row text-center about-hero-heading">
+        <div className={styles.AboutHero}>
+            <div className={`row text-center ${styles.HeroHeading}`}>
                 <SubHeading
                     subHeadTxt={
                         <>
@@ -14,8 +14,8 @@ export default function Hero() {
                     }
                 />
             </div>
-            <div className="row px-5">
-                <div className="col-6 about-hero-para">
+            <div className="row">
+                <div className={`col-md-6 col-12 ${styles.HeroPara}`}>
                     <p>
                         We kick-started operations on the 15th of August, 2010 with the goal
                         of breaking all barriers that traders and investors face in India in
@@ -33,7 +33,7 @@ export default function Hero() {
                         all Indian retail trading volumes.
                     </p>
                 </div>
-                <div className="col-6 about-hero-para2">
+                <div className={`col-md-6 col-12 ${styles.HeroPara2}`}>
                     <p>
                         In addition, we run a number of popular open online educational and
                         community initiatives to empower retail traders and investors.

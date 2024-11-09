@@ -1,0 +1,42 @@
+.TeamPara {
+  text-align: left;
+  width: 550px;
+  margin-left: 15px;
+}
+.TeamPara p {
+  line-height: 1.7;
+  font-size: 16.8px;
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1100px) {
+  .TeamPara {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 15px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 900px) {
+  .TeamPara {
+    margin-left: 5px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 785px) {
+  .TeamPara {
+    width: 700px;
+    max-width: 700px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 775px) {
+  .TeamPara {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0px;
+  }
+}

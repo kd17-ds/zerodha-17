@@ -1,4 +1,4 @@
-import "./TeamImg.css";
+import styles from "./TeamImg.module.css";
 
 export default function TeamImg() {
     return (
@@ -6,10 +6,10 @@ export default function TeamImg() {
             <img
                 src="media/images/D.S.png"
                 alt=""
-                className="mb-4 rounded-circle about-team-image"
+                className={`mb-4 rounded-circle ${styles.TeamImg}`}
             />
-            <h5 className="about-team-name mb-3">Divyansh Sharma</h5>
-            <p className="about-team-designation">Founder, CEO</p>
+            <h5 className={`${styles.TeamName} mb-3`}>Divyansh Sharma</h5>
+            <p className={styles.TeamDesignation}>Founder, CEO</p>
         </div>
     );
 }

@@ -106,7 +106,7 @@
 /* Small devices (up to 437px) */
 @media (max-width: 437px) {
   .NavBarContainer {
-    height: 520px;
+    height: 630px;
   }
   .MiddleLinkHead {
     margin: 0px 0px 0px 3px;
@@ -125,9 +125,6 @@
 
 /* Very Small devices (up to 340px) */
 @media (max-width: 340px) {
-  .NavBarContainer {
-    height: 540px;
-  }
   .InnerBottomLinkBox {
     width: 125px;
     margin-right: 0px;

@@ -1,0 +1,42 @@
+.TeamBox {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 75px;
+  margin: 0px auto;
+}
+.TeamIntroBox {
+  width: 420px;
+  margin-left: 95px;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .TeamBox {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+  .TeamIntroBox {
+    margin-left: 50px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1100px) {
+  .TeamIntroBox {
+    margin-left: 0px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 900px) {
+  .TeamIntroBox {
+    width: 370px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 785px) {
+  .TeamIntroBox {
+    width: 100%;
+  }
+}

@@ -1,10 +1,10 @@
-.about-team-image {
+.TeamImg {
   width: 300px;
   height: 300px;
 }
-.about-team-name {
+.TeamName {
   font-weight: 400;
 }
-.about-team-designation {
+.TeamDesignation {
   font-size: 15px;
 }

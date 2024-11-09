@@ -1,12 +1,12 @@
-import "./TeamData.css";
+import styles from "./TeamData.module.css";
 import Links from "../../Home/Assurance/Links";
 
 export default function TeamData() {
     return (
-        <div className="about-team-para">
+        <div className={styles.TeamPara}>
             <p>
-                D.S bootstrapped and founded Zerodha in 2010 to overcome the <br />hurdles he
-                faced during his decade long stint as a trader. Today, <br /> Zerodha has
+                D.S bootstrapped and founded Zerodha in 2010 to overcome the hurdles he
+                faced during his decade long stint as a trader. Today, Zerodha has
                 changed the landscape of the Indian broking industry.
             </p>
             <p>

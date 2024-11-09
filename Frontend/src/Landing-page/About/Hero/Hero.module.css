@@ -1,0 +1,96 @@
+.AboutHero {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0px 75px;
+  margin: 0px auto;
+}
+.HeroHeading {
+  margin: 0px 50px;
+  padding: 55px;
+  border-bottom: 1px solid #eee;
+}
+.HeroHeading h2 {
+  line-height: 1.5;
+}
+.HeroPara {
+  width: 520px;
+  margin: 100px auto 80px;
+  padding-left: 100px;
+  padding-right: 0px;
+}
+.HeroPara p {
+  line-height: 1.7;
+  font-size: 16.8px;
+}
+.HeroPara2 {
+  width: 520px;
+  margin: 100px auto 80px;
+  padding-right: 70px;
+  padding-left: 0px;
+}
+.HeroPara2 p {
+  line-height: 1.7;
+  font-size: 16.8px;
+}
+.HeroPara2 p a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 2;
+}
+.HeroPara2 p a:hover {
+  color: black;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1200px) {
+  .AboutHero {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+  .HeroHeading {
+    margin: 0px;
+    padding: 55px 0px;
+  }
+  .HeroHeading h2 {
+    padding: 0px;
+  }
+  .HeroPara {
+    width: 100%;
+    max-width: 440px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .HeroPara2 {
+    width: 100%;
+    max-width: 440px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 950px) {
+  .HeroPara {
+    max-width: 380px;
+  }
+  .HeroPara2 {
+    max-width: 380px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 785px) {
+  .HeroHeading {
+    padding: 15px 0px;
+  }
+  .HeroPara {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px auto 20px;
+  }
+  .HeroPara2 {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto 40px;
+  }
+}
