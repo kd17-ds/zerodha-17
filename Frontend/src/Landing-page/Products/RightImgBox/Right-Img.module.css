@@ -1,0 +1,93 @@
+.RightBox {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 75px;
+}
+.RightTxtBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 360px;
+  margin-right: 180px;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .RightBox {
+    padding: 0px 25px;
+    max-width: 1080px;
+  }
+  .RightImgBox {
+    width: 470px;
+  }
+  .RightTxtBox {
+    margin-right: 130px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1080px) {
+  .RightImgBox {
+    width: 400px;
+  }
+  .RightImgBox img {
+    width: 560px;
+    margin-top: 50px;
+    height: 65%;
+  }
+  .RightTxtBox {
+    margin-right: 100px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 970px) {
+  .RightImgBox {
+    width: 330px;
+  }
+  .RightImgBox img {
+    width: 550px;
+    height: 55%;
+  }
+  .RightTxtBox {
+    width: 320px;
+    margin-right: 90px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 875px) {
+  .RightImgBox img {
+    width: 490px;
+    height: 45%;
+    margin-top: 70px;
+  }
+  .RightTxtBox {
+    width: 280px;
+    margin-right: 60px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 785px) {
+  .RightBox {
+    padding: 0px 15px;
+  }
+  .RightImgBox {
+    width: 100%;
+  }
+  .RightImgBox img {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .RightTxtBox {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+  .ReverseBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

@@ -1,4 +1,3 @@
-import "./DataBox.css";
 import SubHeading from "../../Home/Awards/SubHeading";
 import Links from "../../Home/Assurance/Links";
 

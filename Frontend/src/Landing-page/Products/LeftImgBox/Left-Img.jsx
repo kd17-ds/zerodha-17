@@ -1,4 +1,4 @@
-import "./Left-Img.css";
+import styles from "./Left-Img.module.css";
 import ImageBox from "./ImageBox";
 import DataBox from "./DataBox";
 
@@ -12,12 +12,12 @@ export default function LeftImg({
     appStore,
 }) {
     return (
-        <div className="container px-5">
-            <div className="row px-5 product-leftside-box">
-                <div className="col-6">
+        <div className={styles.LeftBox}>
+            <div className={`row`}>
+                <div className={`col-md-6 ${styles.LeftSideImgBox}`}>
                     <ImageBox imageUrl={imageUrl} />
                 </div>
-                <div className="col-6 product-leftside-textBox">
+                <div className={`col-md-6 ${styles.LeftSideTxtBox}`}>
                     <DataBox
                         productName={productName}
                         productDescr={productDescr}

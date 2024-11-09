@@ -1,0 +1,13 @@
+.LeftSideLinkBox2 a {
+  margin-right: 20px;
+}
+.LeftSideLinkBox2 a:hover {
+  opacity: 0.7;
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1080px) {
+  .LeftSideLinkBox2 img {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,41 @@
+.UniverseBox {
+  margin: 80px auto;
+  padding: 0px 75px;
+  max-width: 1300px;
+  width: 100%;
+}
+.UniverseInnerbox h5 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.UniverseInnerbox p {
+  font-size: 16.8px;
+}
+.UniverseImageBox {
+  margin-left: 8px;
+}
+.Images {
+  width: 310px;
+}
+.Images img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.Images p {
+  font-size: 12.7px;
+  color: #9b9b9b;
+  font-weight: 500;
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1070px) {
+  .UniverseImageBox {
+    margin-left: 0px;
+  }
+  .UniverseBox {
+    padding: 0px 25px;
+  }
+  .Images {
+    margin-top: 30px;
+  }
+}

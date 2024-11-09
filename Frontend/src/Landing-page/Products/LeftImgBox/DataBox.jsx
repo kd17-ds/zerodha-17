@@ -1,4 +1,4 @@
-import "./DataBox.css";
+import styles from "./DataBox.module.css";
 import SubHeading from "../../Home/Awards/SubHeading";
 import Links from "../../Home/Assurance/Links";
 
@@ -34,7 +34,7 @@ export default function DataBox({
                     />
                 ) : null}
             </div>
-            <div className="product-leftside-linkBox2">
+            <div className={styles.LeftSideLinkBox2}>
                 <a href="">
                     <img src={googlePlay} alt="" />
                 </a>
