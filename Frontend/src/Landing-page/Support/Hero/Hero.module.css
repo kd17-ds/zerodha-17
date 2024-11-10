@@ -1,0 +1,179 @@
+.HeroBox {
+  background-color: #387ed1;
+  height: 468px;
+  display: flex;
+  justify-content: center;
+}
+.HeroInnerBox {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0px 50px;
+}
+.HeroTopPart {
+  padding: 50px 0px 5px;
+}
+.HeroTopPartHeading h3 a {
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+}
+.HeroTopPartLink a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  padding-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.HeroTopPartLink a:hover {
+  opacity: 0.8;
+}
+.HeroBottomPart {
+  padding: 0px;
+}
+.HeroBottomPartLeft h4 {
+  font-size: 23px;
+  color: #ffffff;
+  line-height: 1.4;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.HeroInputBox {
+  width: 625px;
+  height: 56px;
+  background-color: #ffffff;
+  padding: 0px 10px;
+  color: #666666;
+}
+.BottomPartLinks a {
+  line-height: 2.5;
+  text-decoration: none;
+  margin-right: 50px;
+  color: #ffffff;
+  font-size: 16.7px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.BottomPartRight {
+  padding: 0px;
+  padding-left: 120px;
+}
+.BottomPartRight h3 {
+  font-size: 22px;
+  color: #ffffff;
+}
+.BottomPartRight p,
+.BottomPartRight ul {
+  width: 423px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.BottomPartRight ul a {
+  color: #ffffff;
+  font-size: 17px;
+  text-decoration: underline;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for large desktops */
+@media only screen and (min-width: 1550px) and (max-width: 2000px) {
+  .HeroInnerBox {
+    max-width: 1400px;
+    padding: 0px 30px;
+  }
+  .BottomPartRight {
+    padding-left: 150px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .HeroInnerBox {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+  .BottomPartRight {
+    padding-left: 140px;
+  }
+  .HeroInputBox {
+    width: 575px;
+  }
+  .BottomPartLinks a {
+    margin-right: 40px;
+  }
+}
+
+/* Styles for tablets in landscape and small desktops */
+@media only screen and (max-width: 1114px) {
+  .BottomPartRight {
+    padding-left: 60px;
+  }
+  .HeroInputBox {
+    width: 455px;
+  }
+  .BottomPartLinks a {
+    font-size: 15px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 950px) {
+  .BottomPartRight {
+    padding-left: 30px;
+  }
+  .HeroInputBox {
+    width: 350px;
+  }
+  .BottomPartLinks a {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  .BottomPartRight p,
+  .BottomPartRight ul {
+    width: 373px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 785px) {
+  .HeroBox {
+    height: 100%;
+  }
+  .BottomPartRight {
+    padding-left: 12px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .HeroBottomPartLeft {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .HeroInputBox {
+    min-width: 300px;
+    width: 100%;
+  }
+  .BottomPartLinks a {
+    font-size: 17px;
+  }
+  .BottomPartRight p,
+  .BottomPartRight ul {
+    width: 100%;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 485px) {
+  .BottomPartLinks a {
+    font-size: 15px;
+  }
+}

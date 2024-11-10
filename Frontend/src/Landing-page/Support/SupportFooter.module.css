@@ -1,0 +1,93 @@
+.SupportFooter {
+  background-color: #fbfbfb;
+  margin: 0;
+  width: 100%;
+  padding: 40px 0 20px;
+}
+.SupportFooterInbox {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px 75px;
+}
+.FooterIntrobox {
+  width: 250px;
+}
+.FooterRights {
+  font-size: 13.5px;
+}
+.FooterIntrobox h5 i {
+  font-size: 18px;
+}
+.FooterIntrobox h5 {
+  font-size: 21px;
+}
+.FooterSocials {
+  padding: 15px 0px;
+}
+.FooterSocials i {
+  font-size: 20px;
+  margin-right: 25px;
+  color: #666666;
+}
+.FooterSocials a i:hover {
+  color: #387ed1 !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.FooterLinkBox {
+  width: 250px;
+  margin-left: 50px;
+}
+.FooterLinkBox h3 {
+  font-size: 20px;
+}
+.FooterLinkBox a {
+  font-weight: 490;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.FooterLinkBox a:hover {
+  color: #387ed1 !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .SupportFooterInbox {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+  .FooterLinkBox {
+    width: 230px;
+    margin-left: 20px;
+  }
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1030px) {
+  .FooterLinkBox {
+    width: 210px;
+    margin-left: 10px;
+  }
+}
+
+/* Styles for small desktops and tablets */
+@media only screen and (max-width: 950px) {
+  .FooterLinkBox {
+    width: 200px;
+    margin-left: 0px;
+  }
+  .FooterLinkBox a {
+    font-size: 16px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 875px) {
+  .FooterLinkBox {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

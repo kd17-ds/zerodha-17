@@ -1,0 +1,50 @@
+.HeroBox {
+  margin: 100px auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0px 75px;
+}
+.HeroHeadBox {
+  padding: 0px 0px 100px;
+  border-bottom: 1px solid #eee;
+  margin: 0px 40px;
+}
+.HeroHeadBox p {
+  line-height: 1.6;
+  font-size: 22px;
+}
+.HeroImgBox {
+  padding: 80px 0px;
+  margin: 0px 20px;
+  border-bottom: 1px solid #eee;
+}
+.HeroImgTitle {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.HeroImages {
+  width: 250px;
+}
+
+/* Styles for standard desktops and laptops */
+@media only screen and (max-width: 1300px) {
+  .HeroBox {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .HeroBox {
+    margin: 50px auto;
+  }
+  .HeroHeadBox {
+    padding: 0px 0px 50px;
+    margin: 0px 0px;
+  }
+  .HeroImgBox {
+    padding: 30px 0px;
+    margin: 0px 0px;
+  }
+}

@@ -1,13 +1,13 @@
 import TicketTopic from "./TicketTopic";
-import "./CreateTicket.css"
+import styles from "./CreateTicket.module.css";
 
 export default function CreateTicket() {
     return (
-        <div className="container px-5 support-TicketBox">
-            <div className="row px-5">
+        <div className={styles.TicketBox}>
+            <div className="row">
                 <h3 className="mb-4">To create a ticket, select a relevant topic</h3>
                 <div className="row mt-2 mb-4">
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 ${styles.TicketLinks}`}>
                         <TicketTopic
                             headLinkTxt={
                                 <>
@@ -24,7 +24,7 @@ export default function CreateTicket() {
                             ]}
                         />
                     </div>
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 ${styles.TicketLinks}`}>
                         <TicketTopic
                             headLinkTxt={
                                 <>
@@ -41,7 +41,7 @@ export default function CreateTicket() {
                             ]}
                         />
                     </div>
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 ${styles.TicketLinks}`}>
                         <TicketTopic
                             headLinkTxt={
                                 <>
@@ -60,7 +60,7 @@ export default function CreateTicket() {
                     </div>
                 </div>
                 <div className="row mt-2">
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 `}>
                         <TicketTopic
                             headLinkTxt={
                                 <>
@@ -75,7 +75,7 @@ export default function CreateTicket() {
                             ]}
                         />
                     </div>
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 ${styles.TicketLinks}`}>
                         <TicketTopic
                             headLinkTxt={
                                 <>
@@ -92,7 +92,7 @@ export default function CreateTicket() {
                             ]}
                         />
                     </div>
-                    <div className="col-4">
+                    <div className={`col-md-4 col-12 ${styles.TicketLinks}`}>
                         <TicketTopic
                             headLinkTxt={
                                 <>

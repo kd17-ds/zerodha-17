@@ -1,11 +1,11 @@
-import "./Brokrage.css";
+import styles from "./Brokrage.module.css";
 import Links from "../../Home/Assurance/Links";
 
 export default function Brokrage() {
     return (
-        <div className="container px-5 mt-5 pricing-brokrageBox">
-            <div className="row px-5">
-                <div className="col-5 text-center mb-4">
+        <div className={styles.BrokrageBox}>
+            <div className="row ">
+                <div className="col-5  text-center mb-4">
                     <Links
                         linkTxt={
                             <span style={{ fontSize: "21px", fontFamily: "Arial" }}>
@@ -14,8 +14,8 @@ export default function Brokrage() {
                         }
                     />
                 </div>
-                <div className="col-2"></div>
-                <div className="col-5 text-center mb-4">
+                <div className="col-2  "></div>
+                <div className="col-5  text-center mb-4">
                     <Links
                         linkTxt={
                             <span style={{ fontSize: "21px", fontFamily: "Arial" }}>
@@ -24,7 +24,7 @@ export default function Brokrage() {
                         }
                     />
                 </div>
-                <div className="row px-5 mt-3 pricing-brokrage-points">
+                <div className={`row  mt-3  ${styles.BrokragePoints}`}>
                     <ul>
                         <li>
                             Call & Trade and RMS auto-squareoff: Additional charges of ₹50 +

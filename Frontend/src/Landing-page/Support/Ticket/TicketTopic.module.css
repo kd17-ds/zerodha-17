@@ -1,20 +1,22 @@
-.support-ticket-heading a {
+.TicketHeading a {
+  text-decoration: none;
   color: #222222;
   font-size: 22px;
   font-weight: 400;
 }
-.support-ticket-heading a i {
+.TicketHeading a i {
   margin-right: 5px;
   font-size: 18px;
   opacity: 0.6;
 }
-.support-ticket-heading a:hover {
+.TicketHeading a:hover {
   color: #387ed1;
 }
-.support-ticket-linkBox {
+.TicketLinkBox {
   padding-left: 25px;
 }
-.support-ticket-linkBox a {
+.TicketLinkBox a {
+  text-decoration: none;
   letter-spacing: 0.7px;
   display: inline-block;
   margin-bottom: 20px;
@@ -22,6 +24,6 @@
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
-.support-ticket-linkBox a:hover {
+.TicketLinkBox a:hover {
   color: #666666;
 }

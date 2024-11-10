@@ -1,0 +1,19 @@
+.NotFound {
+  margin: 100px auto;
+  max-width: 1300px;
+  padding: 0px 75px;
+}
+.NotFound p {
+  font-size: 20px;
+}
+.NotFound a {
+  text-decoration: none;
+}
+
+/* Styles for tablets in portrait mode */
+@media only screen and (max-width: 768px) {
+  .NotFound {
+    max-width: 1080px;
+    padding: 0px 15px;
+  }
+}
