@@ -15,24 +15,24 @@ export default function FooterUpperBox() {
                     © 2010 - 2024, Zerodha Broking Ltd. All rights reserved.
                 </p>
                 <div className={`${styles.FooterSocials} flex`}>
-                    <a>
+                    <a href="https://x.com/I_am_DS_17" target="blank">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
                     <a>
                         <i class="fa-brands fa-square-facebook"></i>
                     </a>
-                    <a>
+                    <a href="https://www.instagram.com/kd17_02/" target="blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a>
-                        <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/ds17/" target="blank">
+                        <i class="fa-brands fa-linkedin-in" ></i>
                     </a>
                 </div>
                 <div className={`${styles.FooterSocials2} flex`}>
                     <a>
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a>
+                    <a href="https://wa.me/916367248171" target="blank">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                     <a>
