@@ -1,0 +1,19 @@
+.LeftBox {
+  width: 550px;
+  height: 100vh;
+}
+.LeftTopBox {
+  height: 80px;
+  border-bottom: 2px solid #eee;
+  border-right: 2px solid #eee;
+}
+span {
+  margin-right: 25px;
+  font-size: 13px;
+}
+.CentDig {
+  color: purple;
+}
+.RightDig {
+  color: #29282856;
+}
