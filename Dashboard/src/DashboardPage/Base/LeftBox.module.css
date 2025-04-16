@@ -1,6 +1,8 @@
 .LeftBox {
+  overflow-x: hidden;
   width: 550px;
   height: 100vh;
+  border-right: 2px solid #eee;
 }
 .LeftTopBox {
   height: 80px;
@@ -16,4 +18,23 @@ span {
 }
 .RightDig {
   color: #29282856;
+}
+.LeftBoxes {
+  border-bottom: 2px solid #eee;
+  height: 40px;
+}
+.left1boxtxt {
+  font-size: 14px;
+  color: #29282856;
+}
+.leftboxtxt {
+  font-size: 13px;
+  color: #d81a1a56;
+}
+.leftboxdigit {
+  font-size: 14px;
+  color: grey;
+}
+.reddish {
+  color: #d621a0be !important;
 }
