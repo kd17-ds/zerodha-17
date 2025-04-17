@@ -1,16 +1,14 @@
 .LeftBox {
-  overflow-x: hidden;
-  width: 550px;
-  height: 100vh;
   border-right: 2px solid #eee;
+  height: 100vh;
 }
 .LeftTopBox {
   height: 80px;
   border-bottom: 2px solid #eee;
-  border-right: 2px solid #eee;
+  margin: 0px;
 }
 span {
-  margin-right: 25px;
+  margin-right: 15px;
   font-size: 13px;
 }
 .CentDig {
@@ -22,6 +20,7 @@ span {
 .LeftBoxes {
   border-bottom: 2px solid #eee;
   height: 40px;
+  margin: 0px;
 }
 .left1boxtxt {
   font-size: 14px;
@@ -29,7 +28,7 @@ span {
 }
 .leftboxtxt {
   font-size: 13px;
-  color: #d81a1a56;
+  color: #030c3d56;
 }
 .leftboxdigit {
   font-size: 14px;

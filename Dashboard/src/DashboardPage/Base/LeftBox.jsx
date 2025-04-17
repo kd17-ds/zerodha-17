@@ -29,18 +29,18 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.left1boxtxt}`}>
+                <div className={`col-9 ${styles.left1boxtxt}`}>
                     <b>&nbsp; &nbsp; Search eg:infy, bse, nifty fut weekly, gold mcx</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-3 text-end ${styles.leftboxdigit}`}>
                     <span>9 / 50</span>
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; INFY</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         -1.60% &nbsp;
                         <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>
@@ -49,10 +49,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6 ${styles.leftboxtxt}`}>
                     <b> &nbsp;ONGC</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         -0.09% &nbsp;
                         <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
@@ -61,10 +61,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; TCS</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         -0.25% &nbsp;
                         <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
@@ -73,10 +73,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; KPITTECH</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         3.54% &nbsp;
                         <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
@@ -85,10 +85,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; QUICKHEAL</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         -0.15% &nbsp;
                         <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>
@@ -97,10 +97,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; WIPRO</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         0.32% &nbsp;{" "}
                         <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
@@ -109,10 +109,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp;M&M</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         -0.01% &nbsp;
                         <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
@@ -121,10 +121,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp;RELIANCE</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         1.44% &nbsp;{" "}
                         <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
@@ -133,10 +133,10 @@ export default function LeftBox() {
                 </div>
             </div>
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-8  ${styles.leftboxtxt}`}>
+                <div className={`col-6  ${styles.leftboxtxt}`}>
                     <b> &nbsp; HUL</b>
                 </div>
-                <div className={`col-4 text-end ${styles.leftboxdigit}`}>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
                     <span>
                         1.04% &nbsp;{" "}
                         <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
