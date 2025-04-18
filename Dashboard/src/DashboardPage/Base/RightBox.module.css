@@ -1,5 +1,38 @@
 .heading {
   border-bottom: 2px solid #eee;
-  margin: 50px 30px;
+  margin: 100px 30px 20px;
   color: grey;
+}
+.Equity,
+.Holdings {
+  margin: 50px 50px 80px;
+  border-bottom: 4px solid #eee;
+}
+.Equity h4,
+.Holdings h4 {
+  color: grey;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.EquityBox,
+.HoldingBox {
+  margin: 20px 0px 20px 70px;
+}
+.EquityBox h1,
+.HoldingBox h1 {
+  font-size: 30px;
+  overflow-y: hidden;
+}
+.HoldingBox sub {
+  font-size: 12px;
+  color: rgb(68, 161, 68);
+}
+.EquityBox p,
+.HoldingBox p {
+  font-size: 12px;
+  color: grey;
+}
+.EquityBoxLeft,
+.HoldingBoxLeft {
+  border-right: 3px solid #eee;
 }
