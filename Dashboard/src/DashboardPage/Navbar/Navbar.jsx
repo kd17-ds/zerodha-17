@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -12,12 +13,12 @@ export default function Navbar() {
             </div>
             <div className={styles.NavbarRightBox} >
                 <div className={styles.NavbarLinks}>
-                    <a href="" className={styles.navLinks}>Dashboard</a>
-                    <a href="" className={styles.navLinks}>Orders</a>
-                    <a href="" className={styles.navLinks}>Holdings</a>
-                    <a href="" className={styles.navLinks}>Positions</a>
-                    <a href="" className={styles.navLinks}>Funds</a>
-                    <a href="" className={styles.navLinks}>Apps</a>
+                    <Link to="/dashboard" className={styles.navLinks}>Dashboard</Link>
+                    <Link to="/orders" className={styles.navLinks}>Orders</Link>
+                    <Link to="/holdings" className={styles.navLinks}>Holdings</Link>
+                    <Link to="/positions" className={styles.navLinks}>Positions</Link>
+                    <Link to="/funds" className={styles.navLinks}>Funds</Link>
+                    <Link to="/apps" className={styles.navLinks}>Apps</Link>
                 </div>
                 <div className={styles.Userinfo}>
                     <span style={{ borderRadius: "100%", backgroundColor: "pink", textAlign: "center", padding: "3px 6px" }}>UI</span>
