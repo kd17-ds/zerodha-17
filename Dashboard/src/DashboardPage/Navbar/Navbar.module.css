@@ -1,0 +1,37 @@
+.navbar {
+  height: 80px;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.NavbarImg {
+  height: 40px;
+  width: 40px;
+}
+.NavbarRightBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavbarLinks {
+  border-right: 3px solid #eee;
+}
+.navLinks {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+.navLinks:hover {
+  color: #f13e07;
+  transition: 1s;
+}
+.Userinfo {
+  overflow-y: hidden;
+}
+.Userinfo span {
+  margin-left: 13px;
+}
