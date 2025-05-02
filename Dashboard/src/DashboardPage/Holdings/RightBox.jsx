@@ -1,15 +1,17 @@
 import styles from "./RightBox.module.css";
 import Navbar from "../Navbar/Navbar";
+import HoldingTable from "./HoldingTable";
 
 export default function RightBox() {
     return (
         <div className={styles.RightBox}>
             <Navbar />
             <div className={styles.heading}>
-                <h3 style={{ overflowY: "hidden" }} className="mb-4">
-                    Holdings
-                </h3>
+                <p >
+                    Holdings (13)
+                </p>
             </div>
+            <HoldingTable />
         </div>
     );
 }

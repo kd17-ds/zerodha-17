@@ -5,10 +5,10 @@ export default function RightBox() {
     return (
         <div className={styles.RightBox}>
             <Navbar />
-            <div className={styles.heading}>
-                <h3 style={{ overflowY: "hidden" }} className="mb-4">
-                    Orders
-                </h3>
+            <div className={styles.hero}>
+                <i class="fa-solid fa-book-open"></i>
+                <p>You Haven't placed any orders today</p>
+                <button className={styles.btn}> Get Started </button>
             </div>
         </div>
     );
