@@ -3,3 +3,10 @@
   margin: 50px 30px 20px;
   font-size: 20px;
 }
+.HoldingBoxLeft h1 {
+  font-size: 22px;
+}
+.HoldingBoxLeft p {
+  font-size: 13px;
+  color: grey;
+}
