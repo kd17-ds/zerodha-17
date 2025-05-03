@@ -1,7 +1,44 @@
 import styles from "./LeftBox.module.css";
 import { Link } from "react-router-dom";
 
+function StockRow({ name, change, price }) {
+    const isPositive = parseFloat(change) > 0;
+    const changeColor = isPositive ? "green" : "red";
+    const arrow = isPositive ? "up" : "down";
+
+    return (
+        <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
+            <div className={`col-6 ${styles.leftboxtxt}`}>
+                <strong>&nbsp; {name}</strong>
+            </div>
+            <div className={`col-6 text-end ${styles.leftboxdigit}`}>
+                <span>
+                    {change}% &nbsp;
+                    <i
+                        style={{ color: changeColor }}
+                        className={`fa-solid fa-angle-${arrow}`}
+                        aria-label={isPositive ? "Up" : "Down"}
+                    ></i>
+                    &nbsp; <span className={styles.reddish}>{price}</span>
+                </span>
+            </div>
+        </div>
+    );
+}
+
 export default function LeftBox() {
+    const stockData = [
+        { name: "INFY", change: "-1.60", price: "1555.45" },
+        { name: "ONGC", change: "-0.09", price: "116.8" },
+        { name: "TCS", change: "-0.25", price: "3194.8" },
+        { name: "KPITTECH", change: "3.54", price: "266.45" },
+        { name: "QUICKHEAL", change: "-0.15", price: "308.55" },
+        { name: "WIPRO", change: "0.32", price: "577.75" },
+        { name: "M&M", change: "-0.01", price: "779.8" },
+        { name: "RELIANCE", change: "1.44", price: "2112.4" },
+        { name: "HUL", change: "1.04", price: "514.4" },
+    ];
+
     return (
         <div className={styles.LeftBox}>
             <div className={`flex row align-items-center ${styles.LeftTopBox}`}>
@@ -28,121 +65,31 @@ export default function LeftBox() {
                     </span>
                 </div>
             </div>
+
             <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
                 <div className={`col-9 ${styles.left1boxtxt}`}>
-                    <b>&nbsp; &nbsp; Search eg:infy, bse, nifty fut weekly, gold mcx</b>
+                    <strong>
+                        &nbsp;&nbsp; Search eg: infy, bse, nifty fut weekly, gold mcx
+                    </strong>
                 </div>
                 <div className={`col-3 text-end ${styles.leftboxdigit}`}>
                     <span>9 / 50</span>
                 </div>
             </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; INFY</b>
+
+            {stockData.map((stock, index) => (
+                <StockRow key={index} {...stock} />
+            ))}
+
+            <div className={styles.LeftBoxFooter}>
+                <div className={styles.Pagechange}>
+                    <div className={styles.PageNum}>1</div>
+                    <div className={styles.PageNum}>2</div>
+                    <div className={styles.PageNum}>3</div>
+                    <div className={styles.PageNum}>4</div>
+                    <div className={styles.PageNum}>5</div>
                 </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        -1.60% &nbsp;
-                        <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>
-                        &nbsp; <span className={styles.reddish}>1555.45</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6 ${styles.leftboxtxt}`}>
-                    <b> &nbsp;ONGC</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        -0.09% &nbsp;
-                        <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>116.8</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; TCS</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        -0.25% &nbsp;
-                        <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>3194.8</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; KPITTECH</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        3.54% &nbsp;
-                        <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
-                        <span className={styles.reddish}>&nbsp; 266.45</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; QUICKHEAL</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        -0.15% &nbsp;
-                        <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>
-                        <span className={styles.reddish}> &nbsp; 308.55</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; WIPRO</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        0.32% &nbsp;{" "}
-                        <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>577.75</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp;M&M</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        -0.01% &nbsp;
-                        <i style={{ color: "red" }} class="fa-solid fa-angle-down"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>779.8</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp;RELIANCE</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        1.44% &nbsp;{" "}
-                        <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>2112.4</span>
-                    </span>
-                </div>
-            </div>
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-6  ${styles.leftboxtxt}`}>
-                    <b> &nbsp; HUL</b>
-                </div>
-                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                    <span>
-                        1.04% &nbsp;{" "}
-                        <i style={{ color: "green" }} class="fa-solid fa-angle-up"></i>{" "}
-                        &nbsp; <span className={styles.reddish}>514.4</span>
-                    </span>
-                </div>
+                <div className={styles.Settings}><i class="fa-solid fa-gear"></i></div>
             </div>
         </div>
     );

@@ -7,12 +7,9 @@
   border-bottom: 2px solid #eee;
   margin: 0px;
 }
-span {
-  margin-right: 15px;
-  font-size: 13px;
-}
 .CentDig {
   color: purple;
+  margin: 0px 20px;
 }
 .RightDig {
   color: #29282856;
@@ -36,4 +33,26 @@ span {
 }
 .reddish {
   color: #d621a0be !important;
+}
+.LeftBoxFooter {
+  width: 503px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #eee;
+}
+.Pagechange {
+  display: flex;
+}
+.PageNum {
+  padding: 5px 15px;
+  border-right: 2px solid #eee;
+}
+.Settings {
+  overflow-x: hidden;
+  margin-right: 15px;
 }

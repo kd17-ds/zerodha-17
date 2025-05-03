@@ -5,11 +5,7 @@ export default function RightBox() {
     return (
         <div className={styles.RightBox}>
             <Navbar />
-            <div className={styles.heading}>
-                <h3 style={{ overflowY: "hidden" }} className="mb-4">
-                    Apps
-                </h3>
-            </div>
+
         </div>
     );
 }
