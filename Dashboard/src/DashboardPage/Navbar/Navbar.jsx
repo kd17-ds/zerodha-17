@@ -11,7 +11,7 @@ export default function Navbar() {
         setdisplayNavRightBox((visible) => !visible);
     }
     useEffect(() => {
-        if (displayNavRight) {
+        if (displayNavRightBox) {
             window.addEventListener("click", hideNavRight);
         }
         return () => {
