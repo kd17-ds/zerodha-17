@@ -5,7 +5,7 @@
 }
 .Equity,
 .Holdings {
-  margin: 50px 50px 80px;
+  margin: 30px 50px 0px 50px;
   border-bottom: 4px solid #eee;
 }
 .Equity h4,
@@ -21,7 +21,6 @@
 .EquityBox h1,
 .HoldingBox h1 {
   font-size: 30px;
-  overflow-y: hidden;
 }
 .HoldingBox sub {
   font-size: 12px;

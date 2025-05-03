@@ -10,18 +10,20 @@ export default function RightBox() {
                 <p>Holdings (13)</p>
             </div>
             <HoldingTable />
-            <div className="row mx-3">
-                <div className={`p-3 col-4 ${styles.HoldingBoxLeft}`}>
-                    <h1 style={{ overflow: "hidden" }}>
-                        29,875.<sub>55</sub>
-                    </h1>
-                    <p>Total Investment</p>
-                </div>
-                <div className={`p-3 col-5 ${styles.HoldingBoxLeft}`}>
-                    <h1 style={{ overflow: "hidden" }}>
-                        31,428.<sub>95</sub>
-                    </h1>
-                    <p>Current Value</p>
+            <div className="container p-0 m-0">
+                <div className="row mx-3">
+                    <div className={`p-3 col-4 ${styles.HoldingBoxLeft}`}>
+                        <h1>
+                            29,875.<sub>55</sub>
+                        </h1>
+                        <p>Total Investment</p>
+                    </div>
+                    <div className={`p-3 col-5 ${styles.HoldingBoxLeft}`}>
+                        <h1>
+                            31,428.<sub>95</sub>
+                        </h1>
+                        <p>Current Value</p>
+                    </div>
                 </div>
             </div>
         </div>

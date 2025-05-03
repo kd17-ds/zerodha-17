@@ -1,13 +1,12 @@
 import styles from "./RightBox.module.css";
 import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
 
 export default function RightBox() {
     return (
         <div className={styles.RightBox}>
             <Navbar />
             <div className={styles.heading}>
-                <h3 style={{ overflowY: "hidden" }} className="mb-4">
+                <h3 className="mb-4">
                     Hi, User!
                 </h3>
             </div>
@@ -15,14 +14,16 @@ export default function RightBox() {
                 <h4>
                     <i style={{ fontSize: "14px" }} class="fa-solid fa-clock"></i> Equity
                 </h4>
-                <div className={`row ${styles.EquityBox}`}>
-                    <div className={`p-3 col-2 ${styles.EquityBoxLeft}`}>
-                        <h1>3.74k</h1>
-                        <p>Margin available</p>
-                    </div>
-                    <div className=" p-3 px-5 col-10">
-                        <p>Margins used &nbsp; 0</p>
-                        <p>Opening Balance &nbsp; 3.74k</p>
+                <div className="container p-0 m-0">
+                    <div className={`row ${styles.EquityBox}`}>
+                        <div className={`p-3 col-2 ${styles.EquityBoxLeft}`}>
+                            <h1>3.74k</h1>
+                            <p>Margin available</p>
+                        </div>
+                        <div className=" p-3 px-5 col-10">
+                            <p>Margins used &nbsp; 0</p>
+                            <p>Opening Balance &nbsp; 3.74k</p>
+                        </div>
                     </div>
                 </div>
             </div>

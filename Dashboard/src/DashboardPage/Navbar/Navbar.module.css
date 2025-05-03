@@ -29,9 +29,6 @@
   color: #f13e07;
   transition: 1s;
 }
-.Userinfo {
-  overflow-y: hidden;
-}
 .Userinfo span {
   margin-left: 13px;
 }

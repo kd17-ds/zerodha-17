@@ -7,20 +7,22 @@ function StockRow({ name, change, price }) {
     const arrow = isPositive ? "up" : "down";
 
     return (
-        <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-            <div className={`col-6 ${styles.leftboxtxt}`}>
-                <strong>&nbsp; {name}</strong>
-            </div>
-            <div className={`col-6 text-end ${styles.leftboxdigit}`}>
-                <span>
-                    {change}% &nbsp;
-                    <i
-                        style={{ color: changeColor }}
-                        className={`fa-solid fa-angle-${arrow}`}
-                        aria-label={isPositive ? "Up" : "Down"}
-                    ></i>
-                    &nbsp; <span className={styles.reddish}>{price}</span>
-                </span>
+        <div className="container p-0 m-0">
+            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
+                <div className={`px-0 col-6 ${styles.leftboxtxt}`}>
+                    <strong>&nbsp; {name}</strong>
+                </div>
+                <div className={`col-6 text-end ${styles.leftboxdigit}`}>
+                    <span>
+                        {change}% &nbsp;
+                        <i
+                            style={{ color: changeColor }}
+                            className={`fa-solid fa-angle-${arrow}`}
+                            aria-label={isPositive ? "Up" : "Down"}
+                        ></i>
+                        &nbsp; <span className={styles.reddish}>{price}</span>
+                    </span>
+                </div>
             </div>
         </div>
     );
@@ -40,7 +42,7 @@ export default function LeftBox() {
     ];
 
     return (
-        <div className={styles.LeftBox}>
+        <div className={`container p-0 m-0 ${styles.LeftBox}`}>
             <div className={`flex row align-items-center ${styles.LeftTopBox}`}>
                 <div className="col-6 text-center">
                     <span className={styles.NifSen}>
@@ -65,15 +67,16 @@ export default function LeftBox() {
                     </span>
                 </div>
             </div>
-
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
-                <div className={`col-9 ${styles.left1boxtxt}`}>
-                    <strong>
-                        &nbsp;&nbsp; Search eg: infy, bse, nifty fut weekly, gold mcx
-                    </strong>
-                </div>
-                <div className={`col-3 text-end ${styles.leftboxdigit}`}>
-                    <span>9 / 50</span>
+            <div className="container p-0 m-0">
+                <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
+                    <div className={`px-0 col-9 ${styles.left1boxtxt}`}>
+                        <strong>
+                            &nbsp;&nbsp; Search eg: infy, bse, nifty fut weekly, gold mcx
+                        </strong>
+                    </div>
+                    <div className={`col-3 text-end ${styles.leftboxdigit}`}>
+                        <span>9 / 50</span>
+                    </div>
                 </div>
             </div>
 
