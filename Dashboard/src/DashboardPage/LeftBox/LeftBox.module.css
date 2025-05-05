@@ -56,3 +56,73 @@
 .Settings {
   margin-right: 15px;
 }
+
+.actions {
+  display: flex;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+.buy {
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.buy:hover {
+  background-color: #1565c0;
+}
+
+.sell {
+  background-color: #ff3d00;
+  color: white;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sell:hover {
+  background-color: #d32f2f;
+}
+
+.action {
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #444;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action:hover {
+  border-color: #888;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+.actionWrapper {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  height: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}

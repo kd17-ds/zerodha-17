@@ -1,14 +1,39 @@
 import styles from "./LeftBox.module.css";
-import { Link } from "react-router-dom";
+import { Tooltip, Grow } from "@mui/material";
+import { useState } from "react";
+import { BarChartOutlined, MoreHoriz } from "@mui/icons-material";
+
+export const stockData = [
+    { name: "INFY", change: "-1.60", price: "1555.45" },
+    { name: "ONGC", change: "-0.09", price: "116.8" },
+    { name: "TCS", change: "-0.25", price: "3194.8" },
+    { name: "KPITTECH", change: "3.54", price: "266.45" },
+    { name: "QUICKHEAL", change: "-0.15", price: "308.55" },
+    { name: "WIPRO", change: "0.32", price: "577.75" },
+    { name: "M&M", change: "-0.01", price: "779.8" },
+    { name: "RELIANCE", change: "1.44", price: "2112.4" },
+    { name: "HUL", change: "1.04", price: "514.4" },
+];
 
 function StockRow({ name, change, price }) {
+    const [showWatchListActions, setshowWatchListActions] = useState(false);
     const isPositive = parseFloat(change) > 0;
     const changeColor = isPositive ? "green" : "red";
     const arrow = isPositive ? "up" : "down";
 
+    const handleMouseOver = (e) => {
+        setshowWatchListActions(true);
+    };
+    const handleMouseLeave = (e) => {
+        setshowWatchListActions(false);
+    };
     return (
-        <div className="container p-0 m-0">
-            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
+        <div className="container p-0 m-0 position-relative">
+            <div
+                onMouseEnter={handleMouseOver}
+                onMouseLeave={handleMouseLeave}
+                className={`row flex align-items-center ${styles.LeftBoxes}`}
+            >
                 <div className={`px-0 col-6 ${styles.leftboxtxt}`}>
                     <strong>&nbsp; {name}</strong>
                 </div>
@@ -18,29 +43,23 @@ function StockRow({ name, change, price }) {
                         <i
                             style={{ color: changeColor }}
                             className={`fa-solid fa-angle-${arrow}`}
-                            aria-label={isPositive ? "Up" : "Down"}
                         ></i>
-                        &nbsp; <span className={styles.reddish}>{price}</span>
+                        &nbsp;
+                        <span className={styles.reddish}>{price}</span>
                     </span>
                 </div>
             </div>
+
+            {showWatchListActions && (
+                <div className={styles.actionWrapper}>
+                    <WatchListActions uid={name} />
+                </div>
+            )}
         </div>
     );
 }
 
 export default function LeftBox() {
-    const stockData = [
-        { name: "INFY", change: "-1.60", price: "1555.45" },
-        { name: "ONGC", change: "-0.09", price: "116.8" },
-        { name: "TCS", change: "-0.25", price: "3194.8" },
-        { name: "KPITTECH", change: "3.54", price: "266.45" },
-        { name: "QUICKHEAL", change: "-0.15", price: "308.55" },
-        { name: "WIPRO", change: "0.32", price: "577.75" },
-        { name: "M&M", change: "-0.01", price: "779.8" },
-        { name: "RELIANCE", change: "1.44", price: "2112.4" },
-        { name: "HUL", change: "1.04", price: "514.4" },
-    ];
-
     return (
         <div className={`container p-0 m-0 ${styles.LeftBox}`}>
             <div className={`flex row align-items-center ${styles.LeftTopBox}`}>
@@ -75,7 +94,7 @@ export default function LeftBox() {
                         </strong>
                     </div>
                     <div className={`col-3 text-end ${styles.leftboxdigit}`}>
-                        <span>9 / 50</span>
+                        <span>{stockData.length}</span>
                     </div>
                 </div>
             </div>
@@ -92,8 +111,33 @@ export default function LeftBox() {
                     <div className={styles.PageNum}>4</div>
                     <div className={styles.PageNum}>5</div>
                 </div>
-                <div className={styles.Settings}><i class="fa-solid fa-gear"></i></div>
+                <div className={styles.Settings}>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
             </div>
         </div>
     );
 }
+
+const WatchListActions = ({ uid }) => {
+    return (
+        <span className={styles.actions}>
+            <Tooltip title="Buy (B)" arrow TransitionComponent={Grow}>
+                <button className={styles.buy}>Buy</button>
+            </Tooltip>
+            <Tooltip title="Sell (S)" arrow TransitionComponent={Grow}>
+                <button className={styles.sell}>Sell</button>
+            </Tooltip>
+            <Tooltip title="Analytics (A)" arrow TransitionComponent={Grow}>
+                <button className={styles.action}>
+                    <BarChartOutlined className={styles.icon} />
+                </button>
+            </Tooltip>
+            <Tooltip title="More" arrow TransitionComponent={Grow}>
+                <button className={styles.action}>
+                    <MoreHoriz className={styles.icon} />
+                </button>
+            </Tooltip>
+        </span>
+    );
+};
