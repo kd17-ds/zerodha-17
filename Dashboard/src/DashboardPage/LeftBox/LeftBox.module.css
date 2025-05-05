@@ -75,10 +75,6 @@
   transition: background 0.2s ease;
 }
 
-.buy:hover {
-  background-color: #1565c0;
-}
-
 .sell {
   background-color: #ff3d00;
   color: white;
@@ -91,10 +87,6 @@
   transition: background 0.2s ease;
 }
 
-.sell:hover {
-  background-color: #d32f2f;
-}
-
 .action {
   border: 1px solid #ccc;
   background-color: white;
@@ -104,11 +96,6 @@
   font-size: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
-}
-
-.action:hover {
-  border-color: #888;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
