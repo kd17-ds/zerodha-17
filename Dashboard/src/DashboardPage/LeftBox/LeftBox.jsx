@@ -2,18 +2,7 @@ import styles from "./LeftBox.module.css";
 import { Tooltip, Grow } from "@mui/material";
 import { useState } from "react";
 import { BarChartOutlined, MoreHoriz } from "@mui/icons-material";
-
-export const stockData = [
-    { name: "INFY", change: "-1.60", price: "1555.45" },
-    { name: "ONGC", change: "-0.09", price: "116.8" },
-    { name: "TCS", change: "-0.25", price: "3194.8" },
-    { name: "KPITTECH", change: "3.54", price: "266.45" },
-    { name: "QUICKHEAL", change: "-0.15", price: "308.55" },
-    { name: "WIPRO", change: "0.32", price: "577.75" },
-    { name: "M&M", change: "-0.01", price: "779.8" },
-    { name: "RELIANCE", change: "1.44", price: "2112.4" },
-    { name: "HUL", change: "1.04", price: "514.4" },
-];
+import { stockData } from "../data.js";
 
 function StockRow({ name, change, price }) {
     const [showWatchListActions, setshowWatchListActions] = useState(false);

@@ -1,13 +1,15 @@
 import styles from "./RightBox.module.css";
 import Navbar from "../Navbar/Navbar";
-import HoldingTable, { data } from "./HoldingTable";
+import HoldingTable from "./HoldingTable";
+import { Holdingsdata } from "../data.js";
+
 
 export default function RightBox() {
     return (
         <div className={styles.RightBox}>
             <Navbar />
             <div className={styles.heading}>
-                <p>Holdings ({data.length})</p>
+                <p>Holdings ({Holdingsdata.length})</p>
             </div>
             <HoldingTable />
             <div className="container p-0 m-0">

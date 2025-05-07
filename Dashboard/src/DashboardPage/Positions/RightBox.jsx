@@ -1,6 +1,7 @@
 import styles from "./RightBox.module.css";
 import Navbar from "../Navbar/Navbar";
-import PositionTable, { positionsData } from "./PositionTable";
+import PositionTable from "./PositionTable";
+import { positionsData } from "../data.js";
 
 export default function RightBox() {
     return (

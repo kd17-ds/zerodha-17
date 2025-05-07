@@ -1,23 +1,5 @@
 import styles from './PositionTable.module.css';
-
-export const positionsData = [
-    {
-        product: 'CNC',
-        instrument: 'EVEREADY',
-        qty: 2,
-        avg: 316.27,
-        ltp: 312.35,
-        chg: '-1.24%',
-    },
-    {
-        product: 'CNC',
-        instrument: 'JUBLFOOD',
-        qty: 1,
-        avg: 3124.75,
-        ltp: 3082.65,
-        chg: '-1.35%',
-    },
-];
+import { positionsData } from '../data.js';
 
 export default function PositionTable() {
 
