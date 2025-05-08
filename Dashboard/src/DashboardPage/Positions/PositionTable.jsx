@@ -1,9 +1,8 @@
 import styles from './PositionTable.module.css';
-import { positionsData } from '../data.js';
 
-export default function PositionTable() {
+export default function PositionTable({ allPositions }) {
 
-    const totalPnL = positionsData.reduce((sum, item) => sum + item.pnl, 0).toFixed(2);
+    const totalPnL = allPositions.reduce((sum, item) => sum + item.pnl, 0).toFixed(2);
 
     return (
         <table className={styles.table}>
@@ -19,7 +18,7 @@ export default function PositionTable() {
                 </tr>
             </thead>
             <tbody>
-                {positionsData.map((item, idx) => {
+                {allPositions.map((item, idx) => {
                     const currValue = item.ltp * item.qty;
                     const isProfit = currValue - item.avg * item.qty;
                     return (<tr key={idx}>

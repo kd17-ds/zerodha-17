@@ -1,17 +1,27 @@
 import styles from "./RightBox.module.css";
 import Navbar from "../Navbar/Navbar";
 import HoldingTable from "./HoldingTable";
-import { Holdingsdata } from "../data.js";
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export default function RightBox() {
+    const [allHoldings, setAllHoldings] = useState([]);
+
+    useEffect(() => {
+        axios.get("http://localhost:3002/allHoldings").then((res) => {
+            console.log(res.data);
+            setAllHoldings(res.data);
+        })
+            .catch((error) => console.error("Error fetching holdings:", error));
+    }, []);
+
     return (
         <div className={styles.RightBox}>
             <Navbar />
             <div className={styles.heading}>
-                <p>Holdings ({Holdingsdata.length})</p>
+                <p>Holdings ({allHoldings.length})</p>
             </div>
-            <HoldingTable />
+            <HoldingTable allHoldings={allHoldings} />
             <div className="container p-0 m-0">
                 <div className="row mx-3">
                     <div className={`p-3 col-4 ${styles.HoldingBoxLeft}`}>

@@ -1,9 +1,6 @@
 import styles from './HoldingTable.module.css';
-import { Holdingsdata } from "../data.js";
 
-
-
-export default function HoldingTable() {
+export default function HoldingTable({ allHoldings }) {
     return (
         <div className={styles.container}>
             <table className={styles.table}>
@@ -20,7 +17,7 @@ export default function HoldingTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {Holdingsdata.map((row, idx) => {
+                    {allHoldings.map((row, idx) => {
                         const currValue = row.ltp * row.qty;
                         const isProfit = currValue - row.avgCost * row.qty;
                         return (
