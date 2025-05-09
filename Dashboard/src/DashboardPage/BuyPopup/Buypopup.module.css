@@ -1,0 +1,25 @@
+.PopupBox {
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 550px;
+  z-index: 1;
+  background-color: #eee;
+  padding: 24px;
+  border-radius: 22px;
+}
+.input {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  width: 120px;
+  padding: 6px;
+}
+.Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

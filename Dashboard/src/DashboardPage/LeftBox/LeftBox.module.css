@@ -1,5 +1,4 @@
 .LeftBox {
-  width: 505px;
   border-right: 2px solid #eee;
   height: 100vh;
 }
@@ -72,7 +71,6 @@
   font-weight: 500;
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 .sell {
@@ -84,7 +82,6 @@
   font-weight: 500;
   font-size: 12px;
   cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 .action {
@@ -95,7 +92,6 @@
   border-radius: 6px;
   font-size: 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .icon {

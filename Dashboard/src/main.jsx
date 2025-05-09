@@ -8,10 +8,11 @@ import Positions from "./DashboardPage/Positions/Positions";
 import Funds from "./DashboardPage/Funds/Funds";
 import Apps from "./DashboardPage/Apps/Apps";
 import NotFound from "./DashboardPage/NotFound/NotFound";
+import GeneralContextProvider from "./DashboardPage/GeneralContext/GeneralContext";
 
 function App() {
   return (
-    <>
+    <GeneralContextProvider>
       <Routes>
         <Route path="/" element={<Base />} />
         <Route path="/dashboard" element={<Base />} />
@@ -22,7 +23,7 @@ function App() {
         <Route path="/apps" element={<Apps />} />
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-    </>
+    </GeneralContextProvider>
   );
 }
 

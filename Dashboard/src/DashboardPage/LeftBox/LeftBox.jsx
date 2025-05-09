@@ -3,6 +3,8 @@ import { Tooltip, Grow } from "@mui/material";
 import { useState } from "react";
 import { BarChartOutlined, MoreHoriz } from "@mui/icons-material";
 import { stockData } from "../data.js";
+import { GeneralContext } from "../GeneralContext/GeneralContext.jsx";
+import { useContext } from "react";
 
 function StockRow({ name, change, price }) {
     const [showWatchListActions, setshowWatchListActions] = useState(false);
@@ -17,12 +19,12 @@ function StockRow({ name, change, price }) {
         setshowWatchListActions(false);
     };
     return (
-        <div className="container p-0 m-0 position-relative">
-            <div
-                onMouseEnter={handleMouseOver}
-                onMouseLeave={handleMouseLeave}
-                className={`row flex align-items-center ${styles.LeftBoxes}`}
-            >
+        <div
+            onMouseEnter={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+            className="container p-0 m-0 position-relative"
+        >
+            <div className={`row flex align-items-center ${styles.LeftBoxes}`}>
                 <div className={`px-0 col-6 ${styles.leftboxtxt}`}>
                     <strong>&nbsp; {name}</strong>
                 </div>
@@ -109,10 +111,17 @@ export default function LeftBox() {
 }
 
 const WatchListActions = ({ uid }) => {
+    const { openBuyWindow } = useContext(GeneralContext);
+    const handleOpenClick = () => {
+        console.log("Clicked", uid);
+        openBuyWindow(uid);
+    };
     return (
         <span className={styles.actions}>
             <Tooltip title="Buy (B)" arrow TransitionComponent={Grow}>
-                <button className={styles.buy}>Buy</button>
+                <button onClick={handleOpenClick} className={styles.buy}>
+                    Buy
+                </button>
             </Tooltip>
             <Tooltip title="Sell (S)" arrow TransitionComponent={Grow}>
                 <button className={styles.sell}>Sell</button>
