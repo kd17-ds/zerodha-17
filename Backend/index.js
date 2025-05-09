@@ -38,32 +38,21 @@ app.get("/allPositions", async (req, res) => {
   res.json(allPositions);
 });
 
+app.post("/newOrder", async (req, res) => {
+  let newOrder = new OrdersModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price: req.body.price,
+    mode: req.body.mode,
+  });
+  newOrder.save();
+  res.send("Order Saved");
+});
+
 app.listen(PORT, () => {
   console.log("Server is running on port 3002");
 });
 
-// app.get("/addOrders", async (req, res) => {
-//   let tempOrder = [
-//     { name: "INFY", change: "-1.60", price: "1555.45" },
-//     { name: "ONGC", change: "-0.09", price: "116.8" },
-//     { name: "TCS", change: "-0.25", price: "3194.8" },
-//     { name: "KPITTECH", change: "3.54", price: "266.45" },
-//     { name: "QUICKHEAL", change: "-0.15", price: "308.55" },
-//     { name: "WIPRO", change: "0.32", price: "577.75" },
-//     { name: "M&M", change: "-0.01", price: "779.8" },
-//     { name: "RELIANCE", change: "1.44", price: "2112.4" },
-//     { name: "HUL", change: "1.04", price: "514.4" },
-//   ];
-//   tempOrder.forEach((item) => {
-//     let newOrder = new OrdersModel({
-//       name: item.name,
-//       change: item.change,
-//       price: item.price,
-//     });
-//     newOrder.save();
-//   });
-//   res.send("done1");
-// });
 // app.get("/addPositions", async (req, res) => {
 //   let tempPosition = [
 //     {
