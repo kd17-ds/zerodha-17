@@ -28,6 +28,7 @@ export default function Buypopup({ uid }) {
                 setTimeout(() => {
                     closeBuyWindow();
                 }, 3000);
+                window.location.href = "/holdings";
             })
             .catch((error) => {
                 console.error("Error purchasing stock:", error);

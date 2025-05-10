@@ -38,15 +38,38 @@ app.get("/allPositions", async (req, res) => {
   res.json(allPositions);
 });
 
+app.get("/allOrders", async (req, res) => {
+  let allOrders = await OrdersModel.find({});
+  res.json(allOrders);
+});
+
 app.post("/newOrder", async (req, res) => {
-  let newOrder = new OrdersModel({
-    name: req.body.name,
-    qty: req.body.qty,
-    price: req.body.price,
-    mode: req.body.mode,
-  });
-  newOrder.save();
-  res.send("Order Saved");
+  try {
+    let newOrder = new OrdersModel({
+      name: req.body.name,
+      qty: req.body.qty,
+      price: req.body.price,
+      mode: req.body.mode,
+    });
+    await newOrder.save();
+
+    let avgCost = req.body.price;
+    let netChange = ((req.body.price - avgCost) / avgCost) * 100;
+    const dayChange = (Math.random() * 100 - 50).toFixed(2);
+
+    await HoldingsModel.create({
+      instrument: req.body.name,
+      qty: req.body.qty,
+      ltp: req.body.price,
+      avgCost: avgCost,
+      netChg: netChange,
+      dayChg: dayChange,
+    });
+    res.send("Order Saved");
+  } catch (error) {
+    console.error("Error saving order or holdings:", error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 app.listen(PORT, () => {

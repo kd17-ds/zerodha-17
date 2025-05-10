@@ -1,0 +1,29 @@
+.container {
+  padding: 10px 30px;
+  overflow-x: auto;
+  font-size: 13px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+.table th,
+.table td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  color: grey;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
