@@ -1,0 +1,16 @@
+.PopupBox {
+  width: 290px;
+  position: fixed;
+  top: 50%;
+  left: 550px;
+  z-index: 1;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 22px;
+  text-align: center;
+}
+.Buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -72,6 +72,34 @@ app.post("/newOrder", async (req, res) => {
   }
 });
 
+app.delete("/sellOrder", async (req, res) => {
+  try {
+    const { name, mode } = req.body;
+
+    const holding = await HoldingsModel.findOne({ instrument: name });
+    if (!holding) {
+      return res.status(404).json({ message: "Holding not found" });
+    }
+
+    const { qty, ltp: price } = holding;
+
+    const sellOrder = new OrdersModel({
+      name,
+      qty,
+      price,
+      mode,
+    });
+    await sellOrder.save();
+
+    await HoldingsModel.deleteOne({ instrument: name });
+
+    res.status(200).json({ message: "Sell order placed and holding deleted." });
+  } catch (error) {
+    console.error("Error during sell order:", error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Server is running on port 3002");
 });

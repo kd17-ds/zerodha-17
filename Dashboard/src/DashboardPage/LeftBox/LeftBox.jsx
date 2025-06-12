@@ -112,9 +112,14 @@ export default function LeftBox() {
 
 const WatchListActions = ({ uid }) => {
     const { openBuyWindow } = useContext(GeneralContext);
+    const { openSellWindow } = useContext(GeneralContext);
     const handleOpenClick = () => {
-        console.log("Clicked", uid);
+        console.log("Clicked Buy", uid);
         openBuyWindow(uid);
+    };
+    const handleSellClick = () => {
+        console.log("Clicked Sell", uid);
+        openSellWindow(uid);
     };
     return (
         <span className={styles.actions}>
@@ -124,7 +129,7 @@ const WatchListActions = ({ uid }) => {
                 </button>
             </Tooltip>
             <Tooltip title="Sell (S)" arrow TransitionComponent={Grow}>
-                <button className={styles.sell}>Sell</button>
+                <button onClick={handleSellClick} className={styles.sell}>Sell</button>
             </Tooltip>
             <Tooltip title="Analytics (A)" arrow TransitionComponent={Grow}>
                 <button className={styles.action}>
