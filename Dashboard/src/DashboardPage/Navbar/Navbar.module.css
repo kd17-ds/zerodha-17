@@ -32,3 +32,6 @@
 .Userinfo span {
   margin-left: 13px;
 }
+.Userinfo span:hover {
+  cursor: pointer;
+}

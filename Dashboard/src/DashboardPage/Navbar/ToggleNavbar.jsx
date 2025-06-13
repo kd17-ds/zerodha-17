@@ -1,11 +1,12 @@
 import styles from "./ToggleNavbar.module.css";
 
-export default function ToggleNavbar() {
+
+export default function ToggleNavbar({ username, Logout, email }) {
+
     return (
         <div className={styles.ToggledBox}>
             <div className={styles.box}>
-                <h4 >Zerodha User</h4>
-                <p>hello@zerodha.com</p>
+                <h4 >{username}</h4>
             </div>
             <div className={styles.box}>
                 <p>
@@ -36,7 +37,7 @@ export default function ToggleNavbar() {
                 <p>
                     <i class="fa-solid fa-question"></i> &nbsp;Help
                 </p>
-                <p>
+                <p onClick={Logout}>
                     <i class="fa-solid fa-right-from-bracket"></i>&nbsp; Logout
                 </p>
             </div>

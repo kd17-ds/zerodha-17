@@ -13,3 +13,6 @@
   margin-top: 10px;
   border-bottom: 2px solid #eee;
 }
+.box p:hover {
+  cursor: pointer;
+}

@@ -12,7 +12,15 @@ const dbUrl = process.env.MONGO_URL;
 const authRoute = require("./routes/AuthRoute");
 const dataroute = require("./routes/DataRoute");
 
-app.use(cors());
+app.set("trust proxy", 1);
+
+app.use(
+  cors({
+    origin: true,
+    methods: ["GET", "POST", "PUT", "OPTIONS", "HEAD"],
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
