@@ -6,8 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const dbUrl = process.env.MONGO_URL;
+const authRoute = require("./routes/AuthRoute");
 const { HoldingsModel } = require("./models/HoldingsModel");
 const { OrdersModel } = require("./models/OrdersModel");
 const { PositionsModel } = require("./models/PositionsModel");
@@ -15,6 +17,8 @@ const { PositionsModel } = require("./models/PositionsModel");
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use("/", authRoute);
 
 main()
   .then((res) => {
