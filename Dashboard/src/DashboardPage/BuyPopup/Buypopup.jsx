@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { GeneralContext } from "../GeneralContext/GeneralContext";
 import { useContext, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from '../constants/constants';
 
 export default function Buypopup({ uid }) {
     const [stockQty, setStockQty] = useState(1);
@@ -16,7 +17,7 @@ export default function Buypopup({ uid }) {
     };
 
     const handleBuyClick = () => {
-        axios.post('http://localhost:3002/newOrder', {
+        axios.post(`${BASE_URL}/newOrder`, {
             name: uid,
             qty: stockQty,
             price: stockPrice,

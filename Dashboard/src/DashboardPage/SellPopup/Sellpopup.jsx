@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { GeneralContext } from "../GeneralContext/GeneralContext";
 import { useContext, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from '../constants/constants';
 
 export default function Sellpopup({ uid }) {
     const { closeSellWindow } = useContext(GeneralContext);
@@ -13,7 +14,7 @@ export default function Sellpopup({ uid }) {
         closeSellWindow();
     };
     const handleSellClick = () => {
-        axios.delete('http://localhost:3002/sellOrder', {
+        axios.delete(`${BASE_URL}/sellOrder`, {
             data: {
                 name: uid,
                 mode: "SELL"
