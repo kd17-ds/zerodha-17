@@ -29,10 +29,6 @@ app.use(cookieParser());
 app.use("/", authRoute);
 app.use("/", dataroute);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
-});
-
 main()
   .then((res) => {
     console.log("DATABASE CONNECTED");
