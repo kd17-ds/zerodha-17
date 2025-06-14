@@ -2,6 +2,7 @@ if (process.env.NODE_ENV != "production") {
   require("dotenv").config();
 }
 const express = require("express");
+const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3002;
 const mongoose = require("mongoose");
@@ -11,6 +12,11 @@ const cors = require("cors");
 const dbUrl = process.env.MONGO_URL;
 const authRoute = require("./routes/AuthRoute");
 const dataroute = require("./routes/DataRoute");
+
+app.use(express.static(path.join(__dirname, "client", "dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 
 app.set("trust proxy", 1);
 
