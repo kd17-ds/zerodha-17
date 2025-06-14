@@ -14,10 +14,6 @@ const authRoute = require("./routes/AuthRoute");
 const dataroute = require("./routes/DataRoute");
 
 app.use(express.static(path.join(__dirname, "client", "dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
-});
-
 app.set("trust proxy", 1);
 
 app.use(
@@ -32,6 +28,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use("/", authRoute);
 app.use("/", dataroute);
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 
 main()
   .then((res) => {
