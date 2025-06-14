@@ -3,12 +3,13 @@ import Navbar from "../Navbar/Navbar";
 import OrdersTable from "./OrdersTable";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { BASE_URL } from '../constants/constants';
 
 export default function RightBox() {
     const [allOrders, setallOrders] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3002/allOrders").then((res) => {
+        axios.get(`${BASE_URL}/allOrders`).then((res) => {
             console.log(res.data);
             setallOrders(res.data);
         })

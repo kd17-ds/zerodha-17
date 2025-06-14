@@ -4,12 +4,13 @@ import HoldingTable from "./HoldingTable";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { VerticalChart } from "../Graph/VerticalChart";
+import { BASE_URL } from '../constants/constants';
 
 export default function RightBox() {
     const [allHoldings, setAllHoldings] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3002/allHoldings").then((res) => {
+        axios.get(`${BASE_URL}/allHoldings`).then((res) => {
             console.log(res.data);
             setAllHoldings(res.data);
         })
