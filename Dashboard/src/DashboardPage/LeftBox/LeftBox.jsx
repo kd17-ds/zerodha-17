@@ -5,6 +5,7 @@ import { BarChartOutlined, MoreHoriz } from "@mui/icons-material";
 import { stockData } from "../data.js";
 import { GeneralContext } from "../GeneralContext/GeneralContext.jsx";
 import { useContext } from "react";
+import { DoghnutChart } from "../Graph/DoghnutChart.jsx";
 
 function StockRow({ name, change, price }) {
     const [showWatchListActions, setshowWatchListActions] = useState(false);
@@ -50,6 +51,34 @@ function StockRow({ name, change, price }) {
     );
 }
 
+const labels = stockData.map((subArr) => subArr["name"]);
+const data = {
+    labels,
+    datasets: [
+        {
+            label: "Price",
+            data: stockData.map((stock) => stock.price),
+            backgroundColor: [
+                "rgba(255, 99, 132,0.5)",
+                "rgba(54, 162, 235,0.5)",
+                "rgba(255, 206, 86,0.5)",
+                "rgba(75, 192, 192,0.5)",
+                "rgba(153, 102, 255,0.5)",
+                "rgba(255, 159, 64,0.5)",
+            ],
+            borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+            ],
+            borderWidth: 1,
+        },
+    ],
+};
+
 export default function LeftBox() {
     return (
         <div className={`container p-0 m-0 ${styles.LeftBox}`}>
@@ -94,6 +123,8 @@ export default function LeftBox() {
                 <StockRow key={index} {...stock} />
             ))}
 
+            <DoghnutChart data={data} />
+
             <div className={styles.LeftBoxFooter}>
                 <div className={styles.Pagechange}>
                     <div className={styles.PageNum}>1</div>
@@ -129,7 +160,9 @@ const WatchListActions = ({ uid }) => {
                 </button>
             </Tooltip>
             <Tooltip title="Sell (S)" arrow TransitionComponent={Grow}>
-                <button onClick={handleSellClick} className={styles.sell}>Sell</button>
+                <button onClick={handleSellClick} className={styles.sell}>
+                    Sell
+                </button>
             </Tooltip>
             <Tooltip title="Analytics (A)" arrow TransitionComponent={Grow}>
                 <button className={styles.action}>

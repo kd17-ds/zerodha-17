@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import HoldingTable from "./HoldingTable";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { VerticalChart } from "../Graph/VerticalChart";
 
 export default function RightBox() {
     const [allHoldings, setAllHoldings] = useState([]);
@@ -14,6 +15,19 @@ export default function RightBox() {
         })
             .catch((error) => console.error("Error fetching holdings:", error));
     }, []);
+
+    const labels = allHoldings.map((subArr) => subArr["instrument"]);
+
+    const data = {
+        labels,
+        datasets: [
+            {
+                label: 'Stock Price',
+                data: allHoldings.map((stock) => stock.ltp),
+                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            },
+        ],
+    };
 
     return (
         <div className={styles.RightBox}>
@@ -38,6 +52,7 @@ export default function RightBox() {
                     </div>
                 </div>
             </div>
+            <VerticalChart data={data} />
         </div>
     );
 }
