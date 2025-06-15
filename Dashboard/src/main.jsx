@@ -24,11 +24,14 @@ function App() {
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
   const [isAuth, setisAuth] = useState(false);
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const verifyCookie = async () => {
       if (!cookies.token) {
         setisAuth(false);
+        setLoading(false); // <- Set loading false even if not authenticated
         return;
       }
       try {
@@ -52,6 +55,8 @@ function App() {
         console.error("Auth verification failed:", error);
         removeCookie("token");
         setisAuth(false);
+      } finally {
+        setLoading(false); // <- Always set loading to false once done
       }
     };
 
@@ -60,30 +65,32 @@ function App() {
 
   return (
     <GeneralContextProvider>
-      <Routes>
-
-        {!isAuth && (
-          <>
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="*" element={<NotFound />} />
-            <Route path="/" element={<Login />} />
-          </>
-        )}
-        {isAuth && (
-          <>
-            <Route path="/" element={<Base />} />
-            <Route path="/dashboard" element={<Base />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/holdings" element={<Holdings />} />
-            <Route path="/positions" element={<Positions />} />
-            <Route path="/funds" element={<Funds />} />
-            <Route path="/apps" element={<Apps />} />
-            <Route path="*" element={<NotFound />} />
-          </>
-        )}
-
-      </Routes>
+      {loading ? (
+        <div>Loading...</div> // You can add a spinner or a fancy loading screen here
+      ) : (
+        <Routes>
+          {!isAuth && (
+            <>
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Login />} />
+              <Route path="*" element={<NotFound />} />
+            </>
+          )}
+          {isAuth && (
+            <>
+              <Route path="/" element={<Base />} />
+              <Route path="/dashboard" element={<Base />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/holdings" element={<Holdings />} />
+              <Route path="/positions" element={<Positions />} />
+              <Route path="/funds" element={<Funds />} />
+              <Route path="/apps" element={<Apps />} />
+              <Route path="*" element={<NotFound />} />
+            </>
+          )}
+        </Routes>
+      )}
     </GeneralContextProvider>
   );
 }
