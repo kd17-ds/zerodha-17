@@ -23,11 +23,12 @@ function App() {
   const navigate = useNavigate();
   const [cookies, removeCookie] = useCookies([]);
   const [username, setUsername] = useState("");
+  const [isAuth, setisAuth] = useState(false);
 
   useEffect(() => {
     const verifyCookie = async () => {
       if (!cookies.token) {
-        navigate("/login");
+        setisAuth(false);
         return;
       }
       try {
@@ -39,17 +40,18 @@ function App() {
         const { status, user } = data;
         setUsername(user);
         if (status) {
+          setisAuth(true);
           toast(`${user}`, {
             position: "bottom-right",
           });
         } else {
           removeCookie("token");
-          navigate("/login");
+          setisAuth(false);
         }
       } catch (error) {
         console.error("Auth verification failed:", error);
         removeCookie("token");
-        navigate("/login");
+        setisAuth(false);
       }
     };
 
@@ -59,16 +61,28 @@ function App() {
   return (
     <GeneralContextProvider>
       <Routes>
-        <Route path="/" element={<Base />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Base />} />
-        <Route path="/orders" element={<Orders />} />
-        <Route path="/holdings" element={<Holdings />} />
-        <Route path="/positions" element={<Positions />} />
-        <Route path="/funds" element={<Funds />} />
-        <Route path="/apps" element={<Apps />} />
-        <Route path="*" element={<NotFound />}></Route>
+
+        {!isAuth && (
+          <>
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Login />} />
+          </>
+        )}
+        {isAuth && (
+          <>
+            <Route path="/" element={<Base />} />
+            <Route path="/dashboard" element={<Base />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/holdings" element={<Holdings />} />
+            <Route path="/positions" element={<Positions />} />
+            <Route path="/funds" element={<Funds />} />
+            <Route path="/apps" element={<Apps />} />
+            <Route path="*" element={<NotFound />} />
+          </>
+        )}
+
       </Routes>
     </GeneralContextProvider>
   );
