@@ -4,8 +4,10 @@ import { GeneralContext } from "../GeneralContext/GeneralContext";
 import { useContext, useState } from "react";
 import axios from "axios";
 import { BASE_URL } from '../constants/constants';
+import { useNavigate } from "react-router-dom";
 
 export default function Sellpopup({ uid }) {
+    const navigate = useNavigate();
     const { closeSellWindow } = useContext(GeneralContext);
     const [successMessage, setSuccessMessage] = useState('');
     const [alertMsg, setAlertMsg] = useState('alert alert-success');
@@ -26,7 +28,7 @@ export default function Sellpopup({ uid }) {
                 setTimeout(() => {
                     closeSellWindow();
                 }, 3000);
-                window.location.href = "/holdings";
+                navigate("/holdings");
             })
             .catch((error) => {
                 console.error("Error Selling stock:", error);

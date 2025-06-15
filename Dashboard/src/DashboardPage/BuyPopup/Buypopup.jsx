@@ -4,8 +4,10 @@ import { GeneralContext } from "../GeneralContext/GeneralContext";
 import { useContext, useState } from "react";
 import axios from "axios";
 import { BASE_URL } from '../constants/constants';
+import { useNavigate } from "react-router-dom";
 
 export default function Buypopup({ uid }) {
+    const navigate = useNavigate();
     const [stockQty, setStockQty] = useState(1);
     const [stockPrice, setStockPrice] = useState(0.0);
     const { closeBuyWindow } = useContext(GeneralContext);
@@ -29,7 +31,7 @@ export default function Buypopup({ uid }) {
                 setTimeout(() => {
                     closeBuyWindow();
                 }, 3000);
-                window.location.href = "/holdings";
+                navigate("/holdings");
             })
             .catch((error) => {
                 console.error("Error purchasing stock:", error);

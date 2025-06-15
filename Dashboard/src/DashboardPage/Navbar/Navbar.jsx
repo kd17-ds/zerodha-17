@@ -2,48 +2,16 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import ToggleNavbar from "./ToggleNavbar";
 import { useState, useEffect } from "react";
-import { BASE_URL } from "../constants/constants";
+
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
-import axios from "axios";
+
 import { ToastContainer, toast } from "react-toastify";
 
 export default function Navbar() {
     const navigate = useNavigate();
     const [cookies, removeCookie] = useCookies([]);
     const [username, setUsername] = useState("");
-
-    useEffect(() => {
-        const verifyCookie = async () => {
-            if (!cookies.token) {
-                navigate("/login");
-                return;
-            }
-            try {
-                const { data } = await axios.post(
-                    `${BASE_URL}`,
-                    {},
-                    { withCredentials: true }
-                );
-                const { status, user } = data;
-                setUsername(user);
-                if (status) {
-                    toast(`${user}`, {
-                        position: "bottom-right",
-                    });
-                } else {
-                    removeCookie("token");
-                    navigate("/login");
-                }
-            } catch (error) {
-                console.error("Auth verification failed:", error);
-                removeCookie("token");
-                navigate("/login");
-            }
-        };
-
-        verifyCookie();
-    }, [cookies, navigate, removeCookie]);
 
     const Logout = () => {
         removeCookie("token");

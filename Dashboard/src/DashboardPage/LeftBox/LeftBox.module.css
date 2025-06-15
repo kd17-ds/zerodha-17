@@ -36,6 +36,7 @@
 }
 .LeftBoxFooter {
   width: 505px;
+  background-color: white;
   position: fixed;
   bottom: 0;
   left: 0;
