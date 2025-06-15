@@ -1,3 +1,7 @@
+import styles from "./SignUp.module.css";
+import Links from "../Home/Assurance/Links";
+import MainHeading from "../Home/Hero/MainHeading";
+
 export default function Signup() {
     return (
         <div className={styles.HeroHeadBox}>
@@ -10,7 +14,7 @@ export default function Signup() {
                     Check out our{" "}
                     <Links
                         linkTxt={
-                            <a href="https://zerodha-17-dashboard.onrender.com/login">
+                            <a href="https://zerodha-17-dashboard.onrender.com/">
                                 Dashboard <i className="fa-solid fa-arrow-right"></i>
                             </a>
                         }
